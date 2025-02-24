@@ -9,6 +9,8 @@ new: true
 links:
   - vendor: Digikey
     url: https://www.digikey.com/en/products/detail/jst-sales-america-inc/XHP-3/1651017
+  - vendor: LCSC
+    url: https://www.lcsc.com/product-detail/Housings-Wire-To-Board-Wire-To-Wire_JST-XHP-3-Y_C274388.html
 kofi: true
 optional: false
 category: Electronics
