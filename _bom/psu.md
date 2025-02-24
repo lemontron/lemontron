@@ -12,17 +12,22 @@ links:
     url: https://www.digikey.com/en/products/detail/mean-well-usa-inc/LOP-300-24/22040910
   - vendor: AliExpress
     url: https://www.aliexpress.us/item/3256807058463517.html
+  - vendor: Mouser(EU)
+    url: https://eu.mouser.com/ProductDetail/MEAN-WELL/LOP-300-24?qs=Z%252BL2brAPG1J53tTb9OPXAA%3D%3D
 kofi: true
 optional: false
 category: Electronics
 ---
 
-The following substitute PSU's also work: LOP-300-24, LOP-200-24, LOP-200-24, LOP-300-27.
+The following substitute PSU's also work: LOP-300-27, LOP-200-24, LOP-200-24.
+LOP and EPP variants are dimensionaly quite similiar, but the EPP's are usually a bit taller.
 
 If you are converting a JourneyMaker, you _can_ re-use the EPP-200-24 PSU, in fact the EPP model was used in the
 announcement video and is in my Lemontron. However, the transformers tend to be installed sloppily at a slant, which
 requires snipping off the top of the plastic casing to allow the top plates to sit flush.
 
+Keep in mind that for a positron like printer you would usually want a 200W or higher PSU with voltage of 12-30V.
+Higher than 300W LOP/EPP Mean Well PSU's seem to be larger!
 ## Required Modification
 
 <ol class="steps">

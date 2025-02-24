@@ -7,6 +7,8 @@ new: true
 links:
   - vendor: Digikey
     url: https://www.digikey.com/en/products/detail/jst-sales-america-inc/SXH-001T-P0-6N/7041446
+  - vendor: LCSC
+    url: https://www.lcsc.com/product-detail/Housing-Contact_JST-SXH-001T-P0-6N_C385122.html
 kofi: true
 optional: false
 category: Electronics
