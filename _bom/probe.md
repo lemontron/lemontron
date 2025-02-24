@@ -27,7 +27,7 @@ perfectly, which is crucial for print adhesion and overall print quality.
 
 ## Required Modification
 
-You need to chamfer the bottom of the probe so that you can use the two M2.5 countersink screws. It really is that
+**You need to chamfer the bottom of the probe so that you can use the two M2.5 countersink screws.** It really is that
 compact that it requires shaving a literal millimeter.
 
 ## Technical Drawing
