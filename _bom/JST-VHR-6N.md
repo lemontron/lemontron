@@ -15,4 +15,4 @@ kofi: true
 optional: true
 category: Electronics
 ---
-1 is used on the 24VDC Output connector that plugs into the PSU.
+1 is used on the 24V DC Output connector that plugs into the PSU.
