@@ -114,8 +114,8 @@ other_material="PLA" %}
 {% include inventory-item.html
 title="Spool Holder"
 id="spool-holder"
-description="This has a captive nut. This has very little material requirements, but if anything, layer adhesion is
-important, so PLA is fine."
+description="This has a captive nut, so make sure to add a pause! Layer adhesion is important here, so PLA is a good
+choice."
 preferred_material="PLA" %}
 </ul>
 

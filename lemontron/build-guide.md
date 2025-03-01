@@ -958,6 +958,14 @@ image = "final---attach-bed.jpg"
 content = "Slide the bed into the spring-loaded posts." %}
 
 {% include step.html
+title = "Add the spool holder"
+image = "final---filament-spool.jpg"
+optional = true
+content = "Attach the spool holder through the unpopulated 4th hole on the Z axis."
+screw = "M3x40/BTN"
+note = "This one is an upgraded model designed by @AngryTaco!" %}
+
+{% include step.html
 title = "You've reached the end!"
 image = "final---beauty.jpg"
 content = "You just built the whole thing. Now wash up, you're probably covered in solder fumes." %}
