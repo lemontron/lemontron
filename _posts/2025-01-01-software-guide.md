@@ -20,7 +20,7 @@ the jumper. Good to go!
 
 ## Prepare the Raspberry Pi
 
-Burn Mainsail OS via [Raspberry Pi Imager](https://www.raspberrypi.com/software/) onto your SD Card, ensuring you've
+Burn Mainsail OS (64 bit) via [Raspberry Pi Imager](https://www.raspberrypi.com/software/) onto your SD Card, ensuring you've
 added your SSH key and WiFi settings.
 
 Use SSH to access the Raspberry Pi's terminal and paste this:
@@ -51,4 +51,4 @@ AutoHotspot is a script that will automatically switch your Raspberry Pi between
 presence of your home network.
 Check out
 the [AutoHotspot documentation](https://github.com/RaspberryConnect/AutoHotspot-Installer/tree/master/AutoHotspot-Setup/Autohotspot)
-for more information.
+for more information. Some AutoHotspot tutorials are outdated, you may need to replace the URL with "https://www.raspberryconnect.com/images/hsinstaller/AutoHotspot-Setup.tar.xz"
