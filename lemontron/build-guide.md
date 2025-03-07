@@ -67,7 +67,8 @@ content = "Gather the Z axis (printed), bracket (printed), MGW9C linear rail, 6 
 {% include step.html
 title = "Insert the bearings"
 image = "z-axis---insert-bearings.jpg"
-content = "Insert the two bearings into the bottom seats. Optionally, insert an additional bearing in the top seat."
+content = "Insert 3 MR115 bearings into the seats."
+note = "Or, you can actually omit the top bearing if you want."
 %}
 
 {% include step.html
