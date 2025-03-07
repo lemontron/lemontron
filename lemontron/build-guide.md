@@ -115,10 +115,9 @@ content = "Insert the nut that came with the lead screw to the bracket." %}
 {% include step.html
 title = "Attach the lead nut"
 image = "z-axis---screw-lead-nut.jpg"
-content = "Attach the lead nut to the bracket. If your nut came without countersinks, you
-can either countersink it yourself or use button head screws. It makes no difference."
-screw = "M3x8/CSK"
-%}
+content = "Attach the lead nut to the bracket."
+note = "If your nut isn't countersunk, countersink it."
+screw = "M3x8/CSK" %}
 
 {% include step.html
 title = "Add the bracket"
