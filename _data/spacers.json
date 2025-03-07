@@ -1,6 +1,6 @@
 [
   {
-    "id": "M3 Shims",
+    "id": "M3 Small Shims",
     "type": "shim",
     "standard": "DIN 988",
     "ID": "M3",
@@ -11,7 +11,7 @@
       {"name": "Bearing Towers", "qty": 6, "image": "rail---bearing-towers.jpg"}
     ],
     "total": 1.45,
-    "link": "hhttps://www.aliexpress.us/item/3256802114850018.html",
+    "link": "https://www.aliexpress.us/item/3256802114850018.html",
     "irreplaceable": true
   },
   {

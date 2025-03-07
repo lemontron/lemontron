@@ -1,6 +1,6 @@
 ---
 layout: bom
-title: M3 Shims
+title: M3 Small Shims
 qty: 10
 orders: 1
 total: 1.15
@@ -19,3 +19,4 @@ category: Hardware
 |--------------------------------------------------------------------|----------|
 | [Upper Pullies](/assets/guide/midplate---right---upper-pulley.jpg) | 4        |
 | [Bearing Towers](/assets/guide/rail---bearing-towers.jpg)          | 6        |
+| [Lemonstruder](/assets/guide/lemonstruder---first-shim.jpg)        | 2        |
