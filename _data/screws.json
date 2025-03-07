@@ -26,7 +26,8 @@
     "uses": [
       {"name": "Tool Head", "qty": 2, "image": "chassis---tool---screws.jpg"},
       {"name": "Top Plates", "qty": 4, "image": "top-plates---inner-screws.jpg"},
-      {"name": "Y-Rail", "qty": 9, "image": "chassis---fasten-rail.jpg"}
+      {"name": "Y-Rail", "qty": 9, "image": "chassis---fasten-rail.jpg"},
+      {"name": "Bed Holder", "qty": 5, "image": "bed-holder---attach-spine.jpg"}
     ],
     "total": 1.73,
     "link": "https://www.aliexpress.us/item/3256805993813459.html",
