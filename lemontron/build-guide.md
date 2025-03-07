@@ -209,8 +209,8 @@ screw = "M3x25/WFR"
 {% include step.html
 title = "Gather Lemonstruder parts"
 image = "lemonstruder---parts.jpg"
-content = "Top & bottom halfs (Printed), super glue, yellow spring, 8mm countersunk screw, small bearing, 2 small
-shims (Off frame, sorry)" %}
+content = "Printed top & bottom halves, yellow spring, 8mm countersunk screw, small bearing, 2 small
+shims, and super glue." %}
 
 {% include step.html
 title = "Glue halves together"
