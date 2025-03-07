@@ -4,6 +4,7 @@ title: Software guide
 kofi: true
 thumbnail: /assets/guide/intro---sd-card.jpg
 permalink: /lemontron/software-guide/
+categories: guide
 ---
 
 Lemontron's official software stack is Mainsail OS on a Raspberry Pi.
@@ -30,7 +31,7 @@ cd ~/klipper/
 make menuconfig
 ```
 
-In the menu interface that appears... 
+In the menu interface that appears...
 
 1. Change microcontroller architecture to RP2040
 2. Change communication interface to Serial
