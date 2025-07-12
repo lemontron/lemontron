@@ -8,7 +8,7 @@ permalink: /lemontron/bom/
 ---
 
 This comprehensive list includes all the parts required to assemble a Lemontron 3D printer. Parts that need
-additional processing are marked with MOD.
+trimming, cutting, etc. are marked with MOD.
 
 <div class="paragraph">
     {% include button.html title="Download CSV" icon="cloud_download" link="/lemontron/exports/bom.csv" %}

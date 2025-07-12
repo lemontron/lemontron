@@ -9,20 +9,15 @@ new: false
 links:
   - vendor: KB3D
     url: https://kb-3d.com/store/positron/1985-ldo-pcb-heated-bed-for-positron-with-flex-sheet-1729548921293.html
-    note: PEI PCB with Flex Sheet
-  - vendor: Voxolite
-    url: https://voxolite.myshopify.com/products/pei-pcb-heated-bed-for-positron
-    note: PEI PCB with Flex Sheet
-  - vendor: Voxolite
-    url: https://voxolite.myshopify.com/products/positron-heated-bed-v2-3-edge-connector
-    note: Glass version
+    note: Magnetic Plate
 kofi: true
 optional: false
 category: Positron
 ---
 
-You can choose PEI or glass beds. Glass beds are cool looking, but they are more expensive and not convenient like the PEI sheets.
+A 24V, 100W heat bed in a tiny printer! Insane performance and produced by LDO motors. Glass beds for Lemontron &
+Positron exist, but they are more expensive and not convenient like the magnetic plates.
 
-Positron community member Sample Name has done most of the hard core engineering work on the Positron heat beds.
+Positron community member **Sample Name** has done most of the hard core engineering work on the Positron heat beds.
 
-Avoid Muon3D beds-- they don't work!
+🚨 Avoid Muon3D beds-- they don't work!

@@ -61,8 +61,8 @@ li > ul, li > ol {margin-bottom:0;}
 a {color:inherit; text-decoration:none;}
 
 /* BREADCRUMBS */
-.breadcrumbs {font-family:Nunito, sans-serif; text-transform:uppercase; cursor:default;}
-.breadcrumbs .wrapper {display:flex; gap:8px; align-items:center; white-space:nowrap; padding:8px var(--gutter);}
+.breadcrumbs {text-transform:uppercase; cursor:default; font-size:12px; font-weight:bold;}
+.breadcrumbs .wrapper {display:flex; gap:8px; align-items:center; white-space:nowrap; padding:2px var(--gutter);}
 .breadcrumbs .separator {font-size:16px;}
 .breadcrumbs .home {min-width:16px; font-size:16px;}
 .breadcrumbs a {color:#ff0;}
@@ -315,6 +315,7 @@ tr > *:last-child {padding-right:0;}
 .about-image {display:block; width:300px; height:300px; mask:url(/assets/about/blob2.svg) center / contain no-repeat; margin:0 auto 40px auto;}
 
 .bom-vendors {list-style:none; margin:0; display:flex; gap:10px; flex-direction:column;}
+.bom-vendors li {display:flex; gap:10px; align-items:center;}
 
 /* PRINTED PARTS ITEM PAGE */
 .inventory {display:grid; grid-template-columns: repeat(auto-fit, minmax(320px, 3fr)); gap:var(--gap); list-style:none; margin:0 0 40px 0;}

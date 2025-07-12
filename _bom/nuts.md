@@ -1,7 +1,6 @@
 ---
 layout: bom
 title: Nuts
-description: M3
 qty: 10
 orders: 1
 total: 1.40
@@ -16,8 +15,9 @@ optional: false
 category: Hardware
 ---
 
-In the two outermost holes of the X rail, M3 nuts are inserted to secure the pullies with screws from behind.
+A common M3 nut.
 
-In the Y rail, the last hole has an M3 nut inserted as well, so that it can be secured from the underside of the chassis.
-
-One M3 nut is also used in the optional spool holder.
+- In the two outermost holes of the X rail, M3 nuts are inserted to secure the pullies with screws from behind.
+- In the Y rail, the last hole has an M3 nut inserted as well, so that it can be secured from the underside of the chassis.
+- 1xM3 nut is also used in the optional spool holder.
+- 1xM3 is used in the extruder

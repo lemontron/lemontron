@@ -2,7 +2,9 @@
 layout: default
 ---
 
-<div class="post">
+{% include breadcrumbs.html %}
+
+<div class="page">
     <div class="post-header">
         <div>
             <h1 itemprop="name headline">{{page.title | escape}}</h1>
@@ -33,10 +35,10 @@ layout: default
 
         <ul class="bom-vendors">
             {% for link in page.links %}
-            <div class="paragraph">
-                {% include button.html title=link.vendor icon="shopping_bag" link=link.url target="_blank" %}
+            <li>
+                {% include button.html title=link.vendor icon="shopping_cart" link=link.url target="_blank" %}
                 <span class="button-notes">{{link.note}}</span>
-            </div>
+            </li>
             {% endfor %}
         </ul>
 

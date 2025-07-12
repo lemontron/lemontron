@@ -1,21 +1,20 @@
 ---
 layout: bom
 title: 2510 Fan
-qty: 2
+qty: 3
 orders: 1
-total: 5.84
-description: Chassis Fans
+total: 8.99
 new: false
 links: 
   - vendor: AliExpress
-    url: https://www.aliexpress.us/item/2251832621295326.html
-    note: "24V Ball XH2.54 (2pc)"
+    url: https://www.aliexpress.us/item/3256803697135608.html
+    note: "24V Dual Ball"
   - vendor: Amazon
-    url: "https://www.amazon.com/dp/B0BB277V4F?&tag=lemontron-20"
-    note: "Blue LED version"
+    url: "https://www.amazon.com/dp/B087Q7BJ8Y?&tag=lemontron-20"
+    note: "RGB"
 kofi: true
 optional: false
 category: Electronics
 ---
 
-Chassis fans cool the electronics.
+Chassis fans to cool the electronics.

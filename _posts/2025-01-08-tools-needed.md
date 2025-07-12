@@ -67,11 +67,6 @@ title = "Supa Glue"
 amazon = "B0D2RP4B82"
 image = "https://c.media-amazon.com/images/I/41fqCAwgwsL._SY445_SX342_QL70_FMwebp_.jpg"
 %}
-{% include tool-item.html
-title = "Tape"
-amazon = "B07CB6F1BB"
-image = "https://m.media-amazon.com/images/I/81uQsI8mtuL._AC_SL1500_.jpg"
-%}
 </div>
 
 ## Electrical Tools
