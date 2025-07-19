@@ -54,8 +54,8 @@ preferred_material="ABS" %}
 {% include inventory-item.html
 title="Tensioner"
 id="tensioner"
-description="The tensioner experiences some torsion, so a drift-resistant material like CF-PET is recommended."
-preferred_material="CF-PET"
+description="The tensioner experiences some torsion, so a drift-resistant material like CF-PETG is recommended."
+preferred_material="CF-PETG"
 other_material="PLA" %}
 
 {% include inventory-item.html
@@ -63,7 +63,7 @@ title="Lemonstruder"
 id="lemonstruder"
 description="Lemonstruder is made of two parts. It experiences compression from the spring, so a drift-resistant
 material with good dimensional accuracy is preferred."
-preferred_material="CF-PET"
+preferred_material="CF-PETG"
 other_material="PLA" %}
 
 {% include inventory-item.html
@@ -82,8 +82,8 @@ preferred_material="ABS" %}
 title="XY-Spacer"
 id="xy-spacer"
 description="This links the X and Y rails together to create the XY plane. A stiff material, resistant to warping and
-drift, would be ideal like CF-PET."
-preferred_material="CF-PET"
+drift, would be ideal like CF-PETG."
+preferred_material="CF-PETG"
 other_material="ABS" %}
 </ul>
 
@@ -99,16 +99,16 @@ preferred_material="PLA" %}
 {% include inventory-item.html
 title="Bed Bracket"
 id="bracket"
-description="The bed bracket is made from two parts. A stiff material like CF-PET would be ideal."
-preferred_material="CF-PET"
+description="The bed bracket is made from two parts. A stiff material like CF-PETG would be ideal."
+preferred_material="CF-PETG"
 other_material="PLA" %}
 
 {% include inventory-item.html
 title="Bed Holder"
 id="bed-holder"
-description="This is best printed in CF-PET and the spine can be printed in whatever you want, I recommend matching
+description="This is best printed in CF-PETG and the spine can be printed in whatever you want, I recommend matching
 the tool head materials."
-preferred_material="CF-PET"
+preferred_material="CF-PETG"
 other_material="PLA" %}
 
 {% include inventory-item.html
