@@ -43,7 +43,8 @@
       {"name": "XY Spacer", "qty": 2, "image": "rail---attach-x-rail.jpg"},
       {"name": "Mid Plates", "qty": 2, "image": "midplate---right---locator-screw.jpg"},
       {"name": "Y-Rail Bonus", "qty": 1, "image": "chassis---bonus-screw.jpg"},
-      {"name": "Top Plates", "qty": 4, "image": "top-plates---outer-screws.jpg"}
+      {"name": "Top Plates", "qty": 4, "image": "top-plates---outer-screws.jpg"},
+      {"name": "Bed Screws", "qty": 2, "image": "bed-holder---posts.jpg"}
     ],
     "total": 2.07,
     "link": "https://www.aliexpress.us/item/3256805993813459.html"
@@ -74,18 +75,6 @@
     "total": 2.17,
     "link": "https://www.aliexpress.us/item/2251832624537980.html",
     "irreplaceable": true
-  },
-  {
-    "id": "M3x20/BTN",
-    "type": "button-head",
-    "din": "DIN7380",
-    "thread": "M3",
-    "length": 20,
-    "uses": [
-      {"name": "Bed Screws", "qty": 2, "image": "bed-holder---posts.jpg"}
-    ],
-    "total": 2.40,
-    "link": "https://www.aliexpress.us/item/2251832624537980.html"
   },
   {
     "id": "M3x40/BTN",

@@ -59,7 +59,7 @@ trimming, cutting, etc. are marked with MOD.
 
 ## Screws (${{screws_price}})
 
-This screw list is subject to further optimization.
+These {{site.data.screws | size}} screws are all that are needed to assemble a Lemontron. This screw list is subject to further optimization.
 
 {% include screws_list.html %}
 
