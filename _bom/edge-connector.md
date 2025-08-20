@@ -21,5 +21,4 @@ category: Electronics
 The edge connector is a 2x3 6 pin, straight connector. It is used to electrically connect the edge of the heat bed to
 the SKR PICO.
 
-The LCSC one is used by Voxolite and LDO, but I've not had any issues with the AliExpress one. Parts other than these are known to be less wide
-and require filing the PCB edge to fit.
+Parts other than these are known to be less wide and require filing the PCB edge to fit.
