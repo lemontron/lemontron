@@ -12,7 +12,7 @@ Building a Lemontron now? In the past 6 months after the initial release, there 
 
 ## Is the Lemontron download on Printables up to date?
 
-Mostly, but please print the [Endgame Lemonstruder Beta](https://discord.com/channels/1158982699613163590/1367539640097308857). There is no reason you should build the Lemonstruder from the initial release when the Endgame Lemonstruder exists.
+Mostly, but please print the [Endgame Lemonstruder Beta](https://www.printables.com/model/1389576-endgame-lemonstruder-beta). There is no reason you should build the Lemonstruder from the initial release when the Endgame Lemonstruder exists.
 
 Also, theres a new [Wrap Around Tool Head](https://www.printables.com/model/1304821-wrap-around-cooling-tool-head-for-lemontron) that greatly enhances the cooling performance and has some other wonderful refinements.
 
