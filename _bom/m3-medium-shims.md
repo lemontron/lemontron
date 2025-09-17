@@ -10,15 +10,14 @@ links:
   - vendor: AliExpress
     url: https://www.aliexpress.us/item/3256802114850018.html
     note: M3x7xThick 50pcs, 0.2mm thick
-kofi: true
 optional: false
 category: Hardware
 ---
 
 | Location                                                           | Quantity |
 |--------------------------------------------------------------------|----------|
-| [Lower Pulleys](/assets/guide/midplate---right---lower-pulley.jpg) | 2        |
-| [X Idlers](/assets/guide/rail---x---install-bearings.jpg)          | 2        |
-| [Z Idler](/assets/guide/chassis---attach-z-idler.jpg)              | 2        |
-| [Belt Tensioner](/assets/guide/rail---tensioner---posts.jpg)       | 2        |
-| [Bearing Towers](/assets/guide/rail---bearing-towers.jpg)          | 2        |
+| [Lower Pulleys](/lemontron-rev-a/images/midplate---right---lower-pulley.jpg) | 2        |
+| [X Idlers](/lemontron-rev-a/images/rail---x---install-bearings.jpg)          | 2        |
+| [Z Idler](/lemontron-rev-a/images/chassis---attach-z-idler.jpg)              | 2        |
+| [Belt Tensioner](/lemontron-rev-a/images/rail---tensioner---posts.jpg)       | 2        |
+| [Bearing Towers](/lemontron-rev-a/images/rail---bearing-towers.jpg)          | 2        |

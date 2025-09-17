@@ -8,8 +8,10 @@ new: true
 links:
   - vendor: AliExpress
     url: https://www.aliexpress.us/item/3256802091872943.html
-    note: 16T
-kofi: true
+    note: 16-M3 - Recomended, OMG Extruder design
+  - vendor: AliExpress
+    url: https://www.aliexpress.us/item/3256804552373974.html
+    note: 16T, 5mm ID - Potential alternative, untested
 optional: false
 category: Hardware
 modification: false

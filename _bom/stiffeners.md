@@ -9,7 +9,6 @@ new: true
 links:
   - vendor: AliExpress
     url: https://www.aliexpress.us/item/3256807652024221.html
-kofi: true
 optional: true
 category: Hardware
 ---

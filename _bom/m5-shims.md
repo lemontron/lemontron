@@ -10,7 +10,6 @@ links:
   - vendor: AliExpress
     url: https://www.aliexpress.us/item/3256801859874107.html
     note: M5x8xThick, 0.2mm thick
-kofi: true
 optional: false
 category: Hardware
 ---

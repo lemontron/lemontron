@@ -107,7 +107,9 @@
                 </ul>
             </div>
         </div>
-        {% if page.kofi %}
+        {% if page.hideDonate %}
+
+        {% else %}
         {% include kofi.html %}
         {% endif %}
     </div>

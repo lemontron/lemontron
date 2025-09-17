@@ -14,7 +14,6 @@ links:
     url: https://www.amazon.com/dp/B091YDBK1S?&tag=lemontron-20
     note: Different model, works for me
 modification: true
-kofi: true
 optional: false
 category: Electronics
 ---

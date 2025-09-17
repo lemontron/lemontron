@@ -9,7 +9,6 @@ new: false
 links:
   - vendor: KB3D
     url: https://kb-3d.com/store/positron/1558-ldo-2gt-belt-3mm-175-meters-for-positron-v32-3d-printer-1725634929631.html
-kofi: true
 optional: false
 category: Hardware
 ---

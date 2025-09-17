@@ -1,0 +1,16 @@
+{%- comment -%} _includes/printer-context.html {%- endcomment -%}
+{% assign slug = page.printer | default: page.url | split: '/' | slice: 1, 1 | first %}
+{% assign printer = site.data.printers[slug] %}
+
+{%- assign screws = "" | split: "" -%}
+{%- for pair in printer.screws -%}
+  {%- assign id = pair[0] -%}
+  {%- assign screw = pair[1] -%}
+  {%- assign screw_with_id = screw | merge: {"id": id} -%}
+  {%- assign screws = screws | push: screw_with_id -%}
+{%- endfor -%}
+
+{%- assign screws_price = 0 -%}
+{%- for screw in screws -%}
+{%- assign screws_price = screws_price | plus: screw.total -%}
+{%- endfor -%}

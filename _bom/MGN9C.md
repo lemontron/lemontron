@@ -11,7 +11,6 @@ links:
   - vendor: AliExpress
     url: https://www.aliexpress.us/item/2255800077919268.html
     note: 250mm
-kofi: true
 optional: false
 category: Hardware
 ---

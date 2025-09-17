@@ -12,7 +12,6 @@ links:
     note: 6x3x10, Yellow, 5pcs
   - vendor: Amazon
     url: https://www.amazon.com/dp/B0C33CBKFY?&tag=lemontron-20
-kofi: true
 optional: false
 category: Hardware
 ---

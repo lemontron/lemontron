@@ -17,7 +17,6 @@ links:
     url: https://levendigs.com/products/ldo-positron-90-hotend-kit
   - vendor: West3D
     url: https://west3d.com/products/positron-90-degree-hot-end
-kofi: true
 optional: false
 category: Positron
 ---

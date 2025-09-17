@@ -9,7 +9,6 @@ links:
   - vendor: AliExpress
     url: https://www.aliexpress.us/item/3256806461613254.html
     note: 14AWG
-kofi: true
 optional: false
 category: Electronics
 ---

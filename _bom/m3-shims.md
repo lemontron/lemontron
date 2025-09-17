@@ -10,13 +10,12 @@ links:
   - vendor: AliExpress
     url: https://www.aliexpress.us/item/3256802114850018.html
     note: M3x5xThick 50pcs, 0.2mm thick
-kofi: true
 optional: false
 category: Hardware
 ---
 
 | Location                                                           | Quantity |
 |--------------------------------------------------------------------|----------|
-| [Upper Pullies](/assets/guide/midplate---right---upper-pulley.jpg) | 4        |
-| [Bearing Towers](/assets/guide/rail---bearing-towers.jpg)          | 6        |
-| [Lemonstruder](/assets/guide/lemonstruder---first-shim.jpg)        | 2        |
+| [Upper Pullies](/lemontron-rev-a/images/midplate---right---upper-pulley.jpg) | 4        |
+| [Bearing Towers](/lemontron-rev-a/images/rail---bearing-towers.jpg)          | 6        |
+| [Lemonstruder](/lemontron-rev-a/images/lemonstruder---first-shim.jpg)        | 2        |

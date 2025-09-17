@@ -2,9 +2,7 @@
 layout: post
 title: Modified parts
 categories: guide
-kofi: true
-thumbnail: /assets/guide/motors---cut-shaft.jpg
-permalink: /lemontron/:title
+thumbnail: /lemontron-rev-a/images/motors---cut-shaft.jpg
 ---
 
 Whereas with other printers without such tiny space constraints, on the Lemontron, you need to modify several parts.

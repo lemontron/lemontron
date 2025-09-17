@@ -8,7 +8,6 @@ new: true
 links:
   - vendor: AliExpress
     url: https://www.aliexpress.us/item/3256806811634533.html
-kofi: true
 optional: false
 category: Hardware
 modification: false

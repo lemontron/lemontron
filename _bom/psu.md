@@ -14,7 +14,6 @@ links:
     url: https://www.aliexpress.us/item/3256807058463517.html
   - vendor: Mouser
     url: https://www.mouser.com/ProductDetail/MEAN-WELL/LOP-300-24?qs=Z%252BL2brAPG1J53tTb9OPXAA%3D%3D
-kofi: true
 optional: false
 category: Electronics
 ---

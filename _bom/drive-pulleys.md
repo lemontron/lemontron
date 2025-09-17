@@ -10,7 +10,6 @@ links:
   - vendor: AliExpress
     url: https://www.aliexpress.us/item/2251832727442477.html
     note: 20T Bore 5mm
-kofi: true
 optional: false
 category: Hardware
 ---

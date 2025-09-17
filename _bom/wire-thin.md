@@ -3,13 +3,12 @@ layout: bom
 title: Thin Wire
 qty: 1
 orders: 1
-total: 2.68
+total: 1.92
 new: false
 links:
   - vendor: AliExpress
     url: https://www.aliexpress.us/item/3256804688199892.html
     note: 28AWG
-kofi: true
 optional: false
 category: Electronics
 ---

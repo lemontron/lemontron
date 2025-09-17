@@ -18,7 +18,18 @@ layout: default
 
     <div class="bom-post-top">
         <img src="/assets/bom/{{page.slug}}.png" alt="{{page.title}}" itemprop="image">
-        <span class="bom-qty"> × {{page.qty}}</span>
+
+        <div class="bom-badges">
+            {% if page.new %}
+            <span class="badge new">New</span>
+            {% endif %}
+            {% if page.modification %}
+            <span class="badge mod"><i class="material-icons">carpenter</i> Mod</span>
+            {% endif %}
+            {%- if page.qty > 1 -%}
+            <span class="badge qty">×{{page.qty}}</span>
+            {%- endif -%}
+        </div>
     </div>
 
     <article class="bom" itemscope itemtype="http://schema.org/BlogPosting">

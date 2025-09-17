@@ -10,7 +10,6 @@ links:
   - vendor: KB3D
     url: https://kb-3d.com/store/positron/1985-ldo-pcb-heated-bed-for-positron-with-flex-sheet-1729548921293.html
     note: Magnetic Plate
-kofi: true
 optional: false
 category: Positron
 ---

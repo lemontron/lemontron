@@ -10,7 +10,6 @@ links:
   - vendor: AliExpress
     url: https://www.aliexpress.us/item/3256804498756709.html
     note: 2GT-160mm-width 6mm
-kofi: true
 optional: false
 category: Hardware
 ---

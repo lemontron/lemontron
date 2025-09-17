@@ -1,3 +1,5 @@
+{%- include printer-context.html -%}
+
 <li class="step">
     <h2>{{include.title}}</h2>
     <div class="step-sbs">
@@ -14,7 +16,7 @@
                 <b>L</b>
             </div>
             {%- endif -%}
-            <img src="/assets/guide/{{include.image}}" alt="{{include.alt}}">
+            <img src="/lemontron-rev-a/images/{{include.image}}" alt="{{include.alt}}">
         </div>
         <div class="step-right">
             {% if include.buttonTitle %}
@@ -31,10 +33,10 @@
             <div>{{include.content}}</div>
 
             {%- if include.screw -%}
-            {% assign screw = site.data.screws | where:"id", include.screw | first %}
+            {% assign screw = printer.screws[include.screw] %}
             <div class="step-screw">
                 <div class="screw-pill">
-                    {% include screw.html type=screw.type length=screw.length thread=screw.thread %}
+                    {% include screw.html head=screw.head length_mm=screw.length_mm thread=screw.thread %}
                 </div>
             </div>
             {%- endif -%}

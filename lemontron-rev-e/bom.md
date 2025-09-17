@@ -1,18 +1,18 @@
 ---
 layout: guide
-title: Order the parts
-header_title: BOM
-kofi: true
+title: BOM
 thumbnail: /assets/guide/intro---print-the-parts.jpg
-permalink: /lemontron/bom/
 ---
+
+{% include printer-context.html %}
+{% assign csv_link = '/' | append: slug | append: '/exports/bom.csv' %}
 
 This comprehensive list includes all the parts required to assemble a Lemontron 3D printer. Parts that need
 trimming, cutting, etc. are marked with MOD.
 
 <div class="paragraph">
-    {% include button.html title="Download CSV" icon="cloud_download" link="/lemontron/exports/bom.csv" %}
-    {% include button.html title="Tools Needed" icon="carpenter" link="/lemontron/tools-needed/" %}
+    {% include button.html title="Download CSV" icon="cloud_download" link=csv_link %}
+    {% include button.html title="Tools Needed" icon="carpenter" link="/tools-needed/" %}
 </div>
 
 {%- assign total_new = 0 -%}
@@ -28,7 +28,7 @@ trimming, cutting, etc. are marked with MOD.
 {%- endif -%}
 {%- endfor -%}
 
-{%- for screw in site.data.screws -%}
+{%- for screw in screws -%}
 {%- assign total_price = total_price | plus: screw.total -%}
 {%- endfor -%}
 
@@ -52,21 +52,16 @@ trimming, cutting, etc. are marked with MOD.
 {% assign bom_optional = bom_sorted | where: "optional", true %}
 {% include bom_list.html items=bom_optional %}
 
-{% assign screws_price = 0 %}
-{%- for screw in site.data.screws -%}
-{%- assign screws_price = screws_price | plus: screw.total -%}
-{%- endfor -%}
-
 ## Screws (${{screws_price}})
 
-These {{site.data.screws | size}} screws are all that are needed to assemble a Lemontron. This screw list is subject to further optimization.
+There are only {{screws | size}} types of screws used.
 
 {% include screws_list.html %}
 
-The **NEW** badge is for current owners of a [JourneyMaker](/lemontron/lemontron-journeymaker-origins) who wish to
+The **NEW** badge is for current owners of a [JourneyMaker](/lemontron-rev-a/lemontron-journeymaker-origins) who wish to
 convert it to a
-Lemontron. The cost for the **NEW** parts is **${{total_new}}**, plus another [stepper motor](/lemontron/bom/stepper).
+Lemontron. The cost for the **NEW** parts is **${{total_new}}**, plus another [stepper motor](/lemontron-rev-a/bom/stepper).
 If you're converting a JourneyMaker, you can re-use your entire tool head, so you don't need to buy
-the [positron one](/lemontron/bom/hotend) but it's a big upgrade.
+the [positron one](/lemontron-rev-a/bom/hotend) but it's a big upgrade.
 
 ## Total: **${{total_price}}**

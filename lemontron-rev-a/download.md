@@ -4,27 +4,27 @@ title: Download & print settings guide
 header_title: Download
 description: Settings & Materials
 category: Assembly
-kofi: true
 thumbnail: /assets/content/printed-parts.jpg
-permalink: /lemontron/download/
 ---
 
 <div class="paragraph btn-wrapper">
    {% include button.html 
-   title="Download Lemontron"
+   title="Download Lemontron on Printables"
    link=site.download_link
    icon="cloud_download"
    target="_blank" %}
 </div>
 
-{% include tip.html tip="Don't forget to scale all the ABS parts to ~100.5%!" %}
+{% include tip.html tip="Don't forget to set shrinkage for ABS/ASA!" %}
 
-- Supports? What supports? Lemontron does not use supports!
+## Basic Print Settings
+- Lemontron does not use supports!
 - To ensure dimensional accuracy, use a **0.2mm layer height** and a **0.4mm nozzle**.
 - Top & bottom layers: To avoid infill on 1mm thick vertical features like the top plates, ensure your are using 5 top
   layers and 5 bottom layers.
 - For an insanely buffed printer, use **50% Grid Infill** and **8 Perimeters**, and dial back according to your
   preference.
+- Never ever use Classic wall generator
 - Using my settings will use 800-1000g of filament.
 - Most parts have orientations implied by the **teardrop holes**. Always refer to the plated file if unsure.
 
@@ -54,17 +54,17 @@ preferred_material="ABS" %}
 {% include inventory-item.html
 title="Tensioner"
 id="tensioner"
-description="The tensioner experiences some torsion, so a drift-resistant material like CF-PET is recommended."
-preferred_material="CF-PET"
-other_material="PLA" %}
+description="The tensioner experiences some torsion, so a drift-resistant material like CF-PETG is recommended."
+preferred_material="CF-PETG"
+other_material="PETG" %}
 
 {% include inventory-item.html
 title="Lemonstruder"
 id="lemonstruder"
 description="Lemonstruder is made of two parts. It experiences compression from the spring, so a drift-resistant
 material with good dimensional accuracy is preferred."
-preferred_material="CF-PET"
-other_material="PLA" %}
+preferred_material="CF-PETG"
+other_material="PETG" %}
 
 {% include inventory-item.html
 title="Risers"
@@ -82,8 +82,8 @@ preferred_material="ABS" %}
 title="XY-Spacer"
 id="xy-spacer"
 description="This links the X and Y rails together to create the XY plane. A stiff material, resistant to warping and
-drift, would be ideal like CF-PET."
-preferred_material="CF-PET"
+drift, would be ideal like CF-PETG."
+preferred_material="CF-PETG"
 other_material="ABS" %}
 </ul>
 
@@ -99,17 +99,17 @@ preferred_material="PLA" %}
 {% include inventory-item.html
 title="Bed Bracket"
 id="bracket"
-description="The bed bracket is made from two parts. A stiff material like CF-PET would be ideal."
-preferred_material="CF-PET"
-other_material="PLA" %}
+description="The bed bracket is made from two parts. A stiff material like CF-PETG would be ideal."
+preferred_material="CF-PETG"
+other_material="PETG" %}
 
 {% include inventory-item.html
 title="Bed Holder"
 id="bed-holder"
-description="This is best printed in CF-PET and the spine can be printed in whatever you want, I recommend matching
+description="This is best printed in CF-PETG and the spine can be printed in whatever you want, I recommend matching
 the tool head materials."
-preferred_material="CF-PET"
-other_material="PLA" %}
+preferred_material="CF-PETG"
+other_material="PETG" %}
 
 {% include inventory-item.html
 title="Spool Holder"

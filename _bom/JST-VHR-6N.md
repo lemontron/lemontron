@@ -11,7 +11,6 @@ links:
     url: https://www.digikey.com/en/products/detail/jst-sales-america-inc/VHR-6N/608628
   - vendor: LCSC
     url: https://www.lcsc.com/product-detail/Housings-Wire-To-Board-Wire-To-Wire_JST-VHR-6N_C157896.html
-kofi: true
 optional: true
 category: Electronics
 ---

@@ -1,10 +1,16 @@
+{%- include printer-context.html -%}
+
 <header class="site-header" role="banner">
     <div class="wrapper">
         <a class="site-title" rel="author" href="{{'/' | relative_url}}">
             <img src="/assets/lemontron.svg" alt="Lemontron" height="40" width="157"/>
         </a>
         <nav class="site-nav">
-            {% include button.html title="Build yours" link="/lemontron/" %}
+            {% if printer %}
+            <div class="site-nav-selection">Documentation</div>
+            {% else %}
+            {% include button.html title="Build yours" link="/lemontron-rev-e/" %}
+            {% endif %}
         </nav>
     </div>
 </header>

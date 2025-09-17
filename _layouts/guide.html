@@ -2,10 +2,47 @@
 layout: default
 ---
 
-{% include breadcrumbs.html %}
+<!--{% include breadcrumbs.html %}-->
 
-<div class="wrapper guides-page">
+{% include printer-context.html %}
+
+<div class="nav-bar">
+    <a href="/lemontron-rev-e/" class="{%if slug == 'lemontron-rev-e'%}active{%endif%}">Rev E</a>
+    <a href="/lemontron-rev-a/" class="{%if slug == 'lemontron-rev-a'%}active{%endif%}">Rev A</a>
+</div>
+
+<div class="wrapper">
+    <aside class="sidebar">
+        <ul>
+            <li>
+                <a href="/{{slug}}/" class="active">
+                    <i class="material-icons">home</i>
+                    Introduction
+                </a>
+            </li>
+            <li>
+                <a href="/{{slug}}/download/">
+                    <i class="material-icons">print</i>
+                    Prints
+                </a>
+            </li>
+            <li>
+                <a href="/{{slug}}/bom/">
+                    <i class="material-icons">shopping_cart</i>
+                    BOM
+                </a>
+            </li>
+            <li>
+                <a href="/{{slug}}/build-guide/">
+                    <i class="material-icons">carpenter</i>
+                    Assembly
+                </a>
+            </li>
+        </ul>
+    </aside>
+
     <div class="guide {%if page.small%}post{%endif%}">
+        {% if page.title %}
         <header class="post-header">
             <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
             <p class="post-meta">
@@ -19,6 +56,8 @@ layout: default
                    class="material-icons">history</a>
             </p>
         </header>
+        {% endif %}
+
         <article itemscope itemtype="http://schema.org/BlogPosting">
             <div class="post-content e-content" itemprop="articleBody">
                 {{content}}

@@ -1,6 +1,6 @@
 ---
 layout: bom
-title: Small Bearing
+title: Small Bearings
 qty: 3
 orders: 1
 total: 2.32
@@ -10,7 +10,6 @@ links:
   - vendor: AliExpress
     url: https://www.aliexpress.us/item/3256806541874652.html
     note: 683ZZ
-kofi: true
 optional: false
 category: Hardware
 ---

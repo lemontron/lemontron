@@ -9,7 +9,6 @@ links:
   - vendor: Captubes
     url: https://www.captubes.com/shop/#!/FroggyPad-Print-Bed-Koozie/p/701256710
     note: 7" x 7"
-kofi: true
 optional: true
 category: Positron
 ---

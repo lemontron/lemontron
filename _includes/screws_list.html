@@ -1,11 +1,15 @@
 <div class="table-screws">
-    {% for screw in site.data.screws %}
+    {% for pair in printer.screws %}
+
+    {% assign id = pair[0] %}
+    {% assign screw = pair[1] %}
+
     {%- assign total_qty = 0 -%}
     {%- for use in screw.uses -%}{% assign total_qty = total_qty | plus: use.qty %}{%- endfor -%}
     <div class="screw-container">
         {% include screw.html
-        type=screw.type
-        length=screw.length
+        head=screw.head
+        length_mm=screw.length_mm
         thread=screw.thread
         irreplaceable=screw.irreplaceable
         qty=total_qty %}
@@ -23,10 +27,12 @@
                 <div class="tag">
                     <div class="tag-label">
                         {{use.name}}
-                        {%- if use.image -%}
-                        <a href="/assets/guide/{{use.image}}" target="_blank" class="tag-image material-icons">photo_camera</a>
-                        {%- endif -%}
                     </div>
+                    {%- if use.image -%}
+                    <a href="/{{slug}}/images/{{use.image}}" target="_blank" class="tag-image">
+                        <img src="/{{slug}}/images/{{use.image}}" alt="{{use.name}}">
+                    </a>
+                    {%- endif -%}
                     <div class="tag-value">&times;{{use.qty}}</div>
                 </div>
                 {% endfor %}

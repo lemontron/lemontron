@@ -1,11 +1,8 @@
 ---
-layout: post
-title: Tools needed
+title: Tools Needed
 description: Affiliate links!
-categories: guide
-kofi: true
-thumbnail: /assets/guide/bed-holder---attach-spine.jpg
-permalink: /lemontron/:title/
+thumbnail: /lemontron-rev-a/images/bed-holder---attach-spine.jpg
+category: guide
 ---
 
 These tools are needed to build the Lemontron. You may already have some of them, but if not, you can buy them

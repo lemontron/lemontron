@@ -9,14 +9,13 @@ new: true
 links:
   - vendor: AliExpress
     url: https://www.aliexpress.us/item/3256803873360290.html
-kofi: true
 optional: false
 category: Hardware
 ---
 
 | Location                                                           | Quantity |
 |--------------------------------------------------------------------|----------|
-| [Bed Holder](/assets/guide/bed---holder.jpg)                       | 4        |
-| [Lower Pulleys](/assets/guide/midplate---right---lower-pulley.jpg) | 2        |
-| [Belt Tensioner](/assets/guide/rail---tensioner---posts.jpg)       | 2        |
-| [Bearing Towers](/assets/guide/rail---bearing-towers.jpg)          | 2        |
+| [Bed Holder](/lemontron-rev-a/images/bed---holder.jpg)                       | 4        |
+| [Lower Pulleys](/lemontron-rev-a/images/midplate---right---lower-pulley.jpg) | 2        |
+| [Belt Tensioner](/lemontron-rev-a/images/rail---tensioner---posts.jpg)       | 2        |
+| [Bearing Towers](/lemontron-rev-a/images/rail---bearing-towers.jpg)          | 2        |

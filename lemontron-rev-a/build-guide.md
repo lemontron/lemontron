@@ -1,20 +1,14 @@
 ---
 layout: guide
 title: Build guide
-kofi: true
 thumbnail: /assets/guide/chassis---tool---screws.jpg
-permalink: /lemontron/build-guide/
 ---
-
-**Welcome to the build guide!** Before you assemble, make sure you grab everything you
-need-- [tools](../tools-needed/), [printed parts](../download/) and [ordered parts](../bom/). All hardware is M3 unless
-otherwise stated.
 
 <ol class="steps">
 {% include step.html
 title = "Print the parts"
 image = "intro---slicer.png"
-content = "Check out the <a href='/lemontron/download/'>Printed Parts</a> page for important information."
+content = "Check out the <a href='/lemontron-rev-a/download/'>Printed Parts</a> page for important information."
 buttonTitle = "Download Lemontron"
 buttonIcon = "cloud_download"
 buttonLink = site.download_link
@@ -614,7 +608,7 @@ title = "Fasten the rail"
 image = "chassis---fasten-rail.jpg"
 content = "Screw the rail to the chassis. You must go slow, alternate short rotations and
 don't overheat the plastic."
-screw = "M3x14/CSK" %}
+screw = "M3x14/WFR" %}
 
 {% include step.html
 title = "Insert the bonus screw"

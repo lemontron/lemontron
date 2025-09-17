@@ -1,9 +1,7 @@
 ---
 layout: post
 title: Software guide
-kofi: true
-thumbnail: /assets/guide/intro---sd-card.jpg
-permalink: /lemontron/software-guide/
+thumbnail: /lemontron-rev-a/images/intro---sd-card.jpg
 categories: guide
 ---
 

@@ -11,7 +11,6 @@ links:
     url: https://www.digikey.com/en/products/detail/jst-sales-america-inc/VHR-3N/608625
   - vendor: LCSC
     url: https://www.lcsc.com/product-detail/Housings-Wire-To-Board-Wire-To-Wire_JST-VHR-3N_C157899.html?s_z=n_JST%20VHR-3N
-kofi: true
 optional: true
 category: Electronics
 ---

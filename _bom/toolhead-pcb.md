@@ -9,7 +9,6 @@ new: false
 links: 
   - vendor: PCBWay
     url: "https://www.pcbway.com/project/shareproject/Lemontron_Tool_End_Breakout_Board_f0f9f248.html"
-kofi: true
 optional: true
 category: Electronics
 ---

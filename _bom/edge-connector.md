@@ -13,7 +13,6 @@ links:
   - vendor: LCSC
     url: https://www.lcsc.com/product-detail/Card-Edge-Connectors_WingTAT-ED06BGFBK_C5173287.html
     note: Better consistency and quality
-kofi: true
 optional: false
 category: Electronics
 ---
