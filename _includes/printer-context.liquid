@@ -1,0 +1,12 @@
+{%- assign slug = page.printer | default: page.url | split: '/' | slice: 1, 1 | first -%}
+{%- assign printer = site.data.printers[slug] -%}
+
+{%- comment -%}Calculate the screws price{%- endcomment -%}
+{%- assign printer_screws_price = 0 -%}
+{%- for pair in printer.screws -%}
+    {%- assign screw = pair[1] -%}
+    {%- assign printer_screws_price = printer_screws_price | plus: screw.total -%}
+{%- endfor -%}
+
+{%- comment -%}Find related BOM pages{%- endcomment -%}
+{%- assign bom = site.pages | where: "layout", "bom" | where_exp: "item", "item.url contains slug" | sort: "url" -%}

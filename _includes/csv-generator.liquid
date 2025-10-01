@@ -1,0 +1,18 @@
+Category,Name,Qty,Total,New,Image URL,Link
+{% for item in bom %}
+    {%- assign url_parts = item.url | split: "/" %}
+
+    {%- assign library_key = url_parts | last -%}
+    {%- assign library_item = site.data.library[library_key] -%}
+    {%- assign link = library_item.links | first -%}
+    {%- assign category = url_parts[3] | capitalize -%}
+    {{ category }},{{ item.title }},{{ item.qty }},${{ library_item.price | multiply: item.qty }},{{ library_item.new }},https://lemontron.com/assets/bom/{{ item.url | split: '/' | last }}.png,{{ link.url }}
+{% endfor %}
+{%- for screw_pair in include.printer.screws -%}
+    {%- assign screw = screw_pair[1] -%}
+    {%- assign total_qty = 0 -%}
+    {%- for use in screw.uses -%}
+        {% assign total_qty = total_qty | plus: use.qty %}
+    {%- endfor -%}
+    Screws,{{ screw.head | capitalize }} {{ screw.thread }}x{{ screw.length_mm }}mm,{{ total_qty }},${{ screw.total }},true,,{{ screw.link }}
+{% endfor %}

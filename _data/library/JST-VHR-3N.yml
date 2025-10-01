@@ -1,0 +1,10 @@
+title: JST VHR-3N
+price: 0.10
+new: true
+links:
+  - vendor: Digikey
+    url: https://www.digikey.com/en/products/detail/jst-sales-america-inc/VHR-3N/608625
+  - vendor: LCSC
+    url: https://www.lcsc.com/product-detail/Housings-Wire-To-Board-Wire-To-Wire_JST-VHR-3N_C157899.html?s_z=n_JST%20VHR-3N
+md: |-
+  This is the connector that fits the MeanWell PSU's AC input side.

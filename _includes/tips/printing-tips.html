@@ -1,0 +1,32 @@
+<div class="printing-tips">
+    {% include tips/printing-tip.html
+    description="Don't forget to set shrinkage for ABS/ASA!"
+    subtitle="Calibrate with a test cube; Shrinkage can be found in the filament settings of OrcaSlicer."
+    image="scaling.png" %}
+
+    {% include tips/printing-tip.html
+    description="Don't use supports"
+    image="supports.png" %}
+
+    {% include tips/printing-tip.html
+    description="0.2mm layer height + 0.4mm nozzle"
+    subtitle="Everything was designed with these feature sizes in mind."
+    image="nozzle.png" %}
+
+    {% include tips/printing-tip.html
+    description="5 top layers + 5 bottom layers"
+    subtitle="To avoid infill on 1mm thick vertical shell thickness."
+    image="layers.png" %}
+
+    {% include tips/printing-tip.html
+    description="8 walls + 50% grid"
+    subtitle="For an insanely buffed printer. Uses 800-1000g of filament. Dial back according to your needs." %}
+
+    {% include tips/printing-tip.html
+    description="Never ever use Classic wall generator"
+    subtitle="Some features are too small to recreate with ancient technology." %}
+
+    {% include tips/printing-tip.html
+    description="Orientations are implied by teardrop holes"
+    subtitle="Always refer to the plated file if unsure." %}
+</div>

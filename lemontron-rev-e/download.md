@@ -1,32 +1,14 @@
 ---
 layout: guide
-title: Download & print settings guide
+title: Download
+icon: print
 header_title: Download
 description: Settings & Materials
 category: Assembly
 thumbnail: /assets/content/printed-parts.jpg
 ---
 
-<div class="paragraph btn-wrapper">
-   {% include button.html 
-   title="Download Lemontron on Printables"
-   link=site.download_link
-   icon="cloud_download"
-   target="_blank" %}
-</div>
-
-{% include tip.html tip="Don't forget to set shrinkage for ABS/ASA!" %}
-
-## Basic Print Settings
-- Lemontron does not use supports!
-- To ensure dimensional accuracy, use a **0.2mm layer height** and a **0.4mm nozzle**.
-- Top & bottom layers: To avoid infill on 1mm thick vertical features like the top plates, ensure your are using 5 top
-  layers and 5 bottom layers.
-- For an insanely buffed printer, use **50% Grid Infill** and **8 Perimeters**, and dial back according to your
-  preference.
-- Never ever use Classic wall generator
-- Using my settings will use 800-1000g of filament.
-- Most parts have orientations implied by the **teardrop holes**. Always refer to the plated file if unsure.
+{%- include tips/printing-tips.html -%}
 
 ## Chassis Inventory & Materials
 
@@ -54,8 +36,8 @@ preferred_material="ABS" %}
 {% include inventory-item.html
 title="Tensioner"
 id="tensioner"
-description="The tensioner experiences some torsion, so a drift-resistant material like CF-PETG is recommended."
-preferred_material="CF-PETG"
+description="The tensioner experiences some torsion, so a drift-resistant material like PETG is recommended."
+preferred_material="PETG"
 other_material="PETG" %}
 
 {% include inventory-item.html
@@ -79,12 +61,11 @@ description="Does not experience much load, but does experience heat from the mo
 preferred_material="ABS" %}
 
 {% include inventory-item.html
-title="XY-Spacer"
+title="Carriage Block"
 id="xy-spacer"
 description="This links the X and Y rails together to create the XY plane. A stiff material, resistant to warping and
-drift, would be ideal like CF-PETG."
-preferred_material="CF-PETG"
-other_material="ABS" %}
+drift, is ideal."
+preferred_material="ABS" %}
 </ul>
 
 ## Z-Axis Inventory
@@ -136,3 +117,11 @@ description="Clips the belt to the tool end. Layer adhesion matters most, so I r
 preferred_material="PETG"
 other_material="PLA" %}
 </ul>
+
+<div class="paragraph btn-wrapper">
+   {% include button.html 
+   title="Download Lemontron on Printables"
+   link=site.download_link
+   icon="cloud_download"
+   target="_blank" %}
+</div>

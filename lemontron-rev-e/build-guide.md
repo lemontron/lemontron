@@ -1,19 +1,11 @@
 ---
 layout: guide
-title: Build guide
+title: Build Guide
+icon: carpenter
 thumbnail: /assets/guide/chassis---tool---screws.jpg
 ---
 
 <ol class="steps">
-{% include step.html
-title = "Print the parts"
-image = "intro---slicer.png"
-content = "Check out the <a href='/lemontron-rev-a/download/'>Printed Parts</a> page for important information."
-buttonTitle = "Download Lemontron"
-buttonIcon = "cloud_download"
-buttonLink = site.download_link
-buttonTarget = "_blank"
-%}
 
 {% include step.html
 title = "Install the software"
@@ -144,7 +136,7 @@ screw = "M3x8/CSK" %}
 {% include step.html
 title = "Gather edge connector parts"
 image = "z-axis---edge-connector.jpg"
-content = "Cut approximately 50cm of silicone power wire and signal wires." %}
+content = "Cut approximately 50cm of power wire and signal wires." %}
 
 {% include step.html
 title = "Solder the power wires"
@@ -262,7 +254,7 @@ content = "Starting from the triangle mark, go in order of black, green, blue, r
 {% include step.html
 title = "Gather parts for the tool"
 image = "tool.jpg"
-content = "Tool body (printed), hotend, small fan, big fan, probe, connectors, crimps, power wires (silicone),
+content = "Tool body (printed), hotend, small fan, big fan, probe, connectors, crimps, power wires,
 signal wires, M2.5 x 6mm screws, pcb." %}
 
 {% include step.html
@@ -270,7 +262,7 @@ title = "Tighten the heat break"
 image = "hotend.jpg"
 content = "The heat break is loose from the factory. You need to rebuild the hotend."
 buttonTitle="Guide &rarr; Rebuild the Hotend"
-buttonLink="/lemontron/how-to-rebuild-positron-hotend"
+buttonLink="/how-to-rebuild-positron-hotend"
 %}
 
 {% include step.html
@@ -540,7 +532,7 @@ image = "chassis---plug-motor-connectors.jpg"
 content = "Referring to the SKR Pico pinout, port E connects to the top left (extruder) motor, port X to the bottom left (A) motor, port Y
 to the bottom right motor (B), port Z1 to the top right (Z-Axis) motor."
 buttonTitle = "SKR Pico Pinout"
-buttonLink = "/lemontron/bom/skr/"
+buttonLink = "/bom/skr/"
 buttonIcon = "cable" %}
 
 {% include step.html
@@ -969,6 +961,6 @@ title = "Sike you've not reached the end!"
 image = "calibration---adjust-screw.jpg"
 content = "Use the handy guide to do your one-time calibration."
 buttonTitle="Guide &rarr; How to Calibrate"
-buttonLink="/lemontron/how-to-calibrate"
+buttonLink="/how-to-calibrate"
 %}
 </ol>

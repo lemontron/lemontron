@@ -1,0 +1,17 @@
+title: MR115
+price: 0.99
+new: false
+links:
+  - vendor: AliExpress
+    url: https://www.aliexpress.us/item/3256806950683603.html
+    note: MR115
+md: |-
+  These bearings constrain the lead screw.
+  
+  On the Lemontron Z Axis, the bottom seats two bearings, one on each side of the drive pulley, flanked by M5 shims.
+    
+  | Dimension      | Measurement |
+  |----------------|-------------|
+  | Inner Diameter | 5 mm        |
+  | Outer Diameter | 11 mm       |                                                                                 
+  | Width          | 4 mm        |

@@ -1,31 +1,39 @@
 name: Rev E
 header: "E stands for Endgame Edition 😎"
 screws:
+  M3x12/WFR:
+    head: wafer-head
+    thread: M3
+    length_mm: 12
+    uses:
+      - { name: Rear Idlers, qty: 2 }
+    total: 1.77
+    link: "https://www.aliexpress.us/item/2255800885711092.html"
   M3x14/WFR:
     head: wafer-head
     thread: M3
     length_mm: 14
     uses:
-      - { name: Top Plates, qty: 5, image: "top-plates---inner-screws.jpg" }
-      - { name: Fans, qty: 16, image: "chassis---insert-right-fan.jpg" }
-      - { name: Z Idler, qty: 2, image: "chassis---attach-z-idler.jpg" }
-      - { name: X Idlers, qty: 2, image: "rail---x---add-nuts.jpg" }
-      - { name: AC Plug, qty: 2, image: "chassis---ac-input.jpg" }
-      - { name: A/B Idlers, qty: 2, image: "midplate---right---upper-pulley.jpg" }
-      - { name: Bearing Tower, qty: 2, image: "rail---install-bearing-towers.jpg" }
-      - { name: Z-Block, qty: 2, image: "chassis---screw-in-z-axis.jpg" }
-      - { name: Bed Holder, qty: 2, image: "bed-holder---attach-spine.jpg" }
-      - { name: Tool Head, qty: 2, image: "chassis---tool---screws.jpg" }
-    total: 1.30
+      - { name: Top Plates, qty: 5 }
+      - { name: Fans, qty: 16 }
+      - { name: Z Idler, qty: 2 }
+      - { name: X Idlers, qty: 2 }
+      - { name: AC Plug, qty: 2 }
+      - { name: A/B Idlers, qty: 2 }
+      - { name: Bearing Tower, qty: 2 }
+      - { name: Z-Block, qty: 2 }
+      - { name: Bed Holder, qty: 2 }
+      - { name: Tool Head, qty: 2 }
+    total: 1.77
     link: "https://www.aliexpress.us/item/2255800885711092.html"
   M3x25/WFR:
     head: wafer-head
     thread: M3
     length_mm: 25
     uses:
-      - { name: A/B Idlers, qty: 2, image: "midplate---right---lower-pulley.jpg" }
-      - { name: Bracket, qty: 2, image: "z-axis---tighten-bracket.jpg" }
-    total: 1.70
+      - { name: A/B Idlers, qty: 2 }
+      - { name: Bracket, qty: 2 }
+    total: 2.12
     link: "https://www.aliexpress.us/item/2255800885711092.html"
   M3x8/CSK:
     head: countersunk
@@ -33,12 +41,12 @@ screws:
     thread: M3
     length_mm: 8
     uses:
-      - { name: Z-Rail, qty: 6, image: "z-axis---install-rail.jpg" }
-      - { name: Lemonstruder, qty: 1, image: "lemonstruder---insert-screw.jpg" }
-      - { name: Motors, qty: 6, image: "midplate---left---motor-mounts.jpg" }
-      - { name: Lead Nut, qty: 3, image: "z-axis---screw-lead-nut.jpg" }
-      - { name: Risers, qty: 4, image: "chassis---risers.jpg" }
-      - { name: Clip, qty: 2, image: "chassis---tool---attach-clip.jpg" }
+      - { name: Z-Rail, qty: 6 }
+      - { name: Lemonstruder, qty: 1 }
+      - { name: Motors, qty: 6 }
+      - { name: Lead Nut, qty: 3 }
+      - { name: Risers, qty: 4 }
+      - { name: Clip, qty: 2 }
       - { name: Tensioner, qty: 2 }
     total: 1.44
     link: "https://www.aliexpress.us/item/3256805993813459.html"
@@ -48,12 +56,12 @@ screws:
     thread: M3
     length_mm: 20
     uses:
-      - { name: Y-Rail, qty: 10, image: "chassis---fasten-rail.jpg" }
-      - { name: XY Spacer, qty: 2, image: "rail---attach-x-rail.jpg" }
-      - { name: Mid Plates, qty: 2, image: "midplate---right---locator-screw.jpg" }
-      - { name: Top Plates, qty: 4, image: "top-plates---outer-screws.jpg" }
-      - { name: Bed Screws, qty: 2, image: "bed-holder---posts.jpg" }
-      - { name: Bed Holder, qty: 5, image: "bed-holder---attach-spine.jpg" }
+      - { name: Y-Rail, qty: 10 }
+      - { name: XY Spacer, qty: 2 }
+      - { name: Mid Plates, qty: 2 }
+      - { name: Top Plates, qty: 4 }
+      - { name: Bed Screws, qty: 2 }
+      - { name: Bed Holder, qty: 5 }
     total: 2.07
     link: "https://www.aliexpress.us/item/3256805993813459.html"
   M2.5x6/CSK:
@@ -61,11 +69,11 @@ screws:
     thread: M2.5
     length_mm: 6
     uses:
-      - { name: Heatsink, qty: 4, image: "tool---fasten-hotend.jpg" }
-      - { name: PCB, qty: 4, image: "tool---fasten-pcb.jpg" }
-      - { name: Probe, qty: 2, image: "tool---fasten-probe.jpg" }
-      - { name: Raspberry Pi, qty: 4, image: "chassis---screw-raspberry-pi.jpg" }
-      - { name: Clamp, qty: 1, image: "tool---insert-clamp.jpg" }
+      - { name: Heatsink, qty: 4 }
+      - { name: PCB, qty: 4 }
+      - { name: Probe, qty: 2 }
+      - { name: Raspberry Pi, qty: 4 }
+      - { name: Clamp, qty: 1 }
     total: 1.25
     link: "https://www.aliexpress.us/item/2255801013414226.html"
   M3x40/BTN:
@@ -74,7 +82,7 @@ screws:
     thread: M3
     length_mm: 40
     uses:
-      - { name: Bed Holder, qty: 2, image: "bed-holder---insert-screws.jpg" }
+      - { name: Bed Holder, qty: 2 }
       - { name: Spool, qty: 1 }
     total: 2.64
     link: "https://www.aliexpress.us/item/2255799841823122.html"

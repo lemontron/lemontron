@@ -1,32 +1,14 @@
 ---
 layout: guide
-title: Download & print settings guide
+title: Download
+icon: print
 header_title: Download
 description: Settings & Materials
 category: Assembly
 thumbnail: /assets/content/printed-parts.jpg
 ---
 
-<div class="paragraph btn-wrapper">
-   {% include button.html 
-   title="Download Lemontron on Printables"
-   link=site.download_link
-   icon="cloud_download"
-   target="_blank" %}
-</div>
-
-{% include tip.html tip="Don't forget to set shrinkage for ABS/ASA!" %}
-
-## Basic Print Settings
-- Lemontron does not use supports!
-- To ensure dimensional accuracy, use a **0.2mm layer height** and a **0.4mm nozzle**.
-- Top & bottom layers: To avoid infill on 1mm thick vertical features like the top plates, ensure your are using 5 top
-  layers and 5 bottom layers.
-- For an insanely buffed printer, use **50% Grid Infill** and **8 Perimeters**, and dial back according to your
-  preference.
-- Never ever use Classic wall generator
-- Using my settings will use 800-1000g of filament.
-- Most parts have orientations implied by the **teardrop holes**. Always refer to the plated file if unsure.
+{%- include tips/printing-tips.html -%}
 
 ## Chassis Inventory & Materials
 
@@ -136,3 +118,11 @@ description="Clips the belt to the tool end. Layer adhesion matters most, so I r
 preferred_material="PETG"
 other_material="PLA" %}
 </ul>
+
+<div class="paragraph btn-wrapper">
+   {% include button.html 
+   title="Download Lemontron on Printables"
+   link=site.download_link
+   icon="cloud_download"
+   target="_blank" %}
+</div>

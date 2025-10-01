@@ -1,8 +1,8 @@
-<div class="table-screws">
-    {% for pair in printer.screws %}
+{% include printer-context.liquid %}
 
-    {% assign id = pair[0] %}
-    {% assign screw = pair[1] %}
+<div class="table-screws">
+    {%- for pair in printer.screws -%}
+    {%- assign screw = pair[1] -%}
 
     {%- assign total_qty = 0 -%}
     {%- for use in screw.uses -%}{% assign total_qty = total_qty | plus: use.qty %}{%- endfor -%}

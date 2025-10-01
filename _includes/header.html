@@ -1,4 +1,4 @@
-{%- include printer-context.html -%}
+{%- include printer-context.liquid -%}
 
 <header class="site-header" role="banner">
     <div class="wrapper">
@@ -7,9 +7,13 @@
         </a>
         <nav class="site-nav">
             {% if printer %}
-            <div class="site-nav-selection">Documentation</div>
+            <div class="segmented">
+                {% for printer in site.data.printers %}
+                <a href="/{{printer[0]}}/" class="{%if slug == printer[0]%}active{%endif%}">{{printer[1].name}}</a>
+                {% endfor %}
+            </div>
             {% else %}
-            {% include button.html title="Build yours" link="/lemontron-rev-e/" %}
+            {% include button.html title="Build yours" link="/lemontron-rev-a/" %}
             {% endif %}
         </nav>
     </div>

@@ -1,0 +1,12 @@
+title: OMG 16T
+price: 5.39
+new: true
+links:
+  - vendor: AliExpress
+    url: https://www.aliexpress.us/item/3256802091872943.html
+    note: 16-M3 - Recommended, OMG Extruder design
+  - vendor: AliExpress
+    url: https://www.aliexpress.us/item/3256804552373974.html
+    note: 16T, 5mm ID - Potential alternative, untested
+md: |-
+  Originating from the OMG V2-S Extruder, this compact 16T pinion gear is attached to the motor, which drives the printed ABS gear which holds the K1C extruder gear. In total a 4.5:1 gear ratio is achieved.

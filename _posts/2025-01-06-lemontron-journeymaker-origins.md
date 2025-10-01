@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "JourneyMaker"
-categories: blog
+categories: [news]
 thumbnail: /assets/content/journeymaker.jpg
 banner: /assets/content/journeymaker.jpg
 slug: journeymaker

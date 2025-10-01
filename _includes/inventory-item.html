@@ -1,6 +1,8 @@
+{%- include printer-context.liquid -%}
+
 <li class="inventory-item">
     <div class="inventory-item-left frame">
-        <img class="inventory-item-image" src="/assets/printed-parts/{{include.id}}.png"/>
+        <img class="inventory-item-image" src="/{{slug}}/printed-parts/{{include.id}}.png" alt="{{include.name}}"/>
     </div>
     <div class="inventory-item-right">
         <h4 class="inventory-item-title">{{include.title}}</h4>

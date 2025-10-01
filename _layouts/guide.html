@@ -4,40 +4,22 @@ layout: default
 
 <!--{% include breadcrumbs.html %}-->
 
-{% include printer-context.html %}
-
-<div class="nav-bar">
-    <a href="/lemontron-rev-e/" class="{%if slug == 'lemontron-rev-e'%}active{%endif%}">Rev E</a>
-    <a href="/lemontron-rev-a/" class="{%if slug == 'lemontron-rev-a'%}active{%endif%}">Rev A</a>
-</div>
+{% include printer-context.liquid %}
 
 <div class="wrapper">
     <aside class="sidebar">
         <ul>
+            {% assign rev = slug %}
+            {% for p in site.pages %}
+            {% if p.path contains rev and p.icon %}
             <li>
-                <a href="/{{slug}}/" class="active">
-                    <i class="material-icons">home</i>
-                    Introduction
+                <a href="{{p.url}}" class="{% if page.url == p.url %}active{% endif %}">
+                    <i class="material-icons">{{p.icon}}</i>
+                    <span>{{p.title}}</span>
                 </a>
             </li>
-            <li>
-                <a href="/{{slug}}/download/">
-                    <i class="material-icons">print</i>
-                    Prints
-                </a>
-            </li>
-            <li>
-                <a href="/{{slug}}/bom/">
-                    <i class="material-icons">shopping_cart</i>
-                    BOM
-                </a>
-            </li>
-            <li>
-                <a href="/{{slug}}/build-guide/">
-                    <i class="material-icons">carpenter</i>
-                    Assembly
-                </a>
-            </li>
+            {% endif %}
+            {% endfor %}
         </ul>
     </aside>
 
@@ -70,4 +52,3 @@ layout: default
         </article>
     </div>
 </div>
-
