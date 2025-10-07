@@ -6,7 +6,7 @@ qty: 10
 
 | Location                                                           | Quantity |
 |--------------------------------------------------------------------|----------|
-| [Bed Holder](/lemontron-rev-a/images/bed---holder.jpg)                       | 4        |
-| [Lower Pulleys](/lemontron-rev-a/images/midplate---right---lower-pulley.jpg) | 2        |
-| [Belt Tensioner](/lemontron-rev-a/images/rail---tensioner---posts.jpg)       | 2        |
-| [Bearing Towers](/lemontron-rev-a/images/rail---bearing-towers.jpg)          | 2        |
+| [Bed Holder](/lemontron-rev-a/build-guide/bed---holder.jpg)                       | 4        |
+| [Lower Pulleys](/lemontron-rev-a/build-guide/midplate---right---lower-pulley.jpg) | 2        |
+| [Belt Tensioner](/lemontron-rev-a/build-guide/rail---tensioner---posts.jpg)       | 2        |
+| [Bearing Towers](/lemontron-rev-a/build-guide/rail---bearing-towers.jpg)          | 2        |

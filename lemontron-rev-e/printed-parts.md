@@ -1,10 +1,8 @@
 ---
 layout: guide
-title: Download
+title: Printed Parts
 icon: print
-header_title: Download
 description: Settings & Materials
-category: Assembly
 thumbnail: /assets/content/printed-parts.jpg
 ---
 
@@ -16,56 +14,76 @@ thumbnail: /assets/content/printed-parts.jpg
 {% include inventory-item.html
 title="Top Plates"
 id="top-plates"
-description="The top plates are mostly decorative, save for the Lemonstruder. Show off your printing
-abilities with a flashy filament and upload your results to the photo album."
+settings="5 walls, 25% grid"
+description="Mostly decorative, but need some thickness around the screw holes. Show off your printing
+abilities with a flashy filament."
 preferred_material="PLA" %}
 
 {% include inventory-item.html
 title="Unibody Chassis"
 id="chassis"
-description="The chassis should be made from a stiff material, and it does not experience savage heat. Therefore I would
-recommend PLA."
+description="The chassis should be made from a stiff material, and it does not experience savage heat."
+settings="8 walls, 50% grid"
 preferred_material="PLA" %}
 
 {% include inventory-item.html
 title="Mid Plates"
 id="mid-plates"
-description="high temp material is required because these serve as the motor mounts."
+description="High-temp material is required because these serve as the motor mounts."
+settings="5 walls, 50% grid"
 preferred_material="ABS" %}
 
 {% include inventory-item.html
 title="Tensioner"
 id="tensioner"
-description="The tensioner experiences some torsion, so a drift-resistant material like PETG is recommended."
-preferred_material="PETG"
-other_material="PETG" %}
+description="High-temp material is required because this screws directly into the motor."
+settings="5 walls, 50% grid"
+preferred_material="ABS" %}
 
 {% include inventory-item.html
 title="Lemonstruder"
 id="lemonstruder"
-description="Lemonstruder is made of two parts. It experiences compression from the spring, so a drift-resistant
-material with good dimensional accuracy is preferred."
+description="Made of two parts. Experiences compression from the spring, so a drift-resistant
+material with good accuracy is preferred."
+settings="5 walls, 50% grid"
 preferred_material="CF-PETG"
-other_material="PETG" %}
+other_material="ABS" %}
 
 {% include inventory-item.html
 title="Risers"
 id="risers"
-description="Raspberry Pi mounts to these and they keep the SKR Pico pinned down. The material doesn't matter."
-preferred_material="ABS" %}
+description="Raspberry Pi mounts to these, and they keep the SKR Pico pinned down. Material doesn't matter."
+settings="5 walls, 50% grid"
+preferred_material="PLA" %}
 
 {% include inventory-item.html
 title="Z-Tensioner"
 id="z-tensioner"
-description="Does not experience much load, but does experience heat from the motor, so ABS is recommended."
+description="High-temp material is required because this screws directly into the motor."
+settings="5 walls, 50% grid"
 preferred_material="ABS" %}
 
 {% include inventory-item.html
-title="Carriage Block"
-id="xy-spacer"
+title="Gantry Block"
+id="gantry-block"
 description="This links the X and Y rails together to create the XY plane. A stiff material, resistant to warping and
 drift, is ideal."
+settings="5 walls, 50% grid"
 preferred_material="ABS" %}
+
+{% include inventory-item.html
+title="Fan Wire Guide"
+id="fan-wire-guide"
+description="No specific material requirements."
+settings="3 walls, 25% grid, concentric top"
+preferred_material="PLA" %}
+
+{% include inventory-item.html
+title="Filament Guide"
+id="filament-guide"
+description="No specific material requirements."
+settings="3 walls, 25% grid"
+preferred_material="PLA" %}
 </ul>
 
 ## Z-Axis Inventory
@@ -75,6 +93,7 @@ preferred_material="ABS" %}
 title="Z-Axis"
 id="z-axis"
 description="Choose any material for this part, just make sure it looks awesome."
+settings="5 walls, 50% grid"
 preferred_material="PLA" %}
 
 {% include inventory-item.html
@@ -82,6 +101,7 @@ title="Bed Bracket"
 id="bracket"
 description="The bed bracket is made from two parts. A stiff material like CF-PETG would be ideal."
 preferred_material="CF-PETG"
+settings="5 walls, 50% grid"
 other_material="PETG" %}
 
 {% include inventory-item.html
@@ -89,6 +109,7 @@ title="Bed Holder"
 id="bed-holder"
 description="This is best printed in CF-PETG and the spine can be printed in whatever you want, I recommend matching
 the tool head materials."
+settings="8 walls, 50% grid"
 preferred_material="CF-PETG"
 other_material="PETG" %}
 
@@ -97,6 +118,7 @@ title="Spool Holder"
 id="spool-holder"
 description="This has a captive nut, so make sure to add a pause! Layer adhesion is important here, so PLA is a good
 choice."
+settings="5 walls, 50% grid, concentric top/bottom"
 preferred_material="PLA" %}
 </ul>
 
@@ -104,24 +126,24 @@ preferred_material="PLA" %}
 
 <ul class="inventory">
 {% include inventory-item.html
-title="Tool Head & Clamp"
-id="tool"
-description="The tool head houses the hotend and thus must be printed in ABS. The clamp is a small part that holds the
-wires in."
+title="Tool Head"
+id="tool-head"
+description="The tool head houses the hotend and thus must be printed in ABS."
+settings="5 walls, 50% grid, outer/inner wall order"
 preferred_material="ABS" %}
 
 {% include inventory-item.html
 title="Clip"
 id="clip"
 description="Clips the belt to the tool end. Layer adhesion matters most, so I recommend PETG or PLA."
+settings="5 walls, 50% grid"
 preferred_material="PETG"
 other_material="PLA" %}
-</ul>
 
-<div class="paragraph btn-wrapper">
-   {% include button.html 
-   title="Download Lemontron on Printables"
-   link=site.download_link
-   icon="cloud_download"
-   target="_blank" %}
-</div>
+{% include inventory-item.html
+title="Clamp"
+id="clamp"
+description="No material requirements. Perhaps use ABS to match."
+settings="5 walls, 50% grid"
+preferred_material="ABS" %}
+</ul>

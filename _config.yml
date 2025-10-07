@@ -10,5 +10,7 @@ download_link: https://www.printables.com/@Lemontron
 plugins:
   - jekyll-feed
 permalink: /:categories/:title
-kramdown:
-  smart_quotes: ["apos", "apos", "quot", "quot"]
+collections:
+  troubleshooting:
+      output: true
+      permalink: /troubleshooting/:title

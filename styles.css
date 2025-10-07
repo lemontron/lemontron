@@ -84,6 +84,7 @@ a.frame:hover:after, a:hover .frame:after {border:2px solid #ff0;}
 article {margin-bottom:40px;}
 .post-content a {color:#09f;}
 .post-content a:hover {text-decoration:underline;}
+.post-troubleshooting label {background:#212; padding:5px 10px; display:flex; margin-bottom:10px; border-radius:10px; font-size:12px; font-weight:bold; text-transform:uppercase;}
 
 blockquote {color:#828282; border-left:4px solid #e8e8e8; padding-left:15px; font-size:18px;}
 blockquote > :last-child {margin-bottom:0;}
@@ -210,8 +211,7 @@ tr > *:last-child {padding-right:0;}
 .post-header .post-meta a {color:#fff;}
 
 .post-list-item {display:flex; gap:20px; flex-direction:column;}
-.post-list-item-body {display:flex; flex-direction:column; gap:var(--gap);}
-.post-list-item-body p {font-size:12px;}
+.post-list-item-body {display:flex; flex-direction:column; gap:var(--gap); font-size:12px;}
 .post-list-item:not(:last-child) {margin-bottom:20px;}
 .post-list-item * {margin-bottom:0;}
 .post-list-item h3 a {color:inherit;}
@@ -292,11 +292,15 @@ pre.highlight {background:#110; color:#ffff1f; border-radius:10px; border:1px so
 .highlight .il {color:#099;}
 
 /* GUIDES PAGE LAYOUT */
-.sidebar {overflow:auto; margin:20px var(--gutter); flex-shrink:0; font-size:16px; font-family:var(--header-font), sans-serif; text-transform:uppercase;}
-.sidebar ul {list-style:none; margin:0; display:flex; justify-content:center;}
-.sidebar ul li a {display:flex; align-items:center; gap:5px; color:var(--color); padding:5px 15px;border:1px solid transparent;}
-.sidebar ul li a i {font-size:16px;}
-.sidebar ul li a.active {background:#313; border-radius:20px; color:#ff0; border-color:rgba(255,255,255,.1);}
+.sidebar {overflow:auto; margin:10px var(--gutter); font-size:16px; font-family:var(--header-font), sans-serif; white-space:nowrap;}
+.sidebar::-webkit-scrollbar {display:none;}
+.sidebar ul {list-style:none; margin:0; display:flex;}
+.sidebar li.spacer {flex:1;}
+.sidebar ul li a {display:flex; align-items:center; gap:5px; color:var(--color); padding:5px 15px; border:1px solid transparent; border-radius:20px;}
+.sidebar ul li a i {font-size:16px; flex-shrink:0;}
+.sidebar ul li a.active {background:#313; color:#ff0; border-color:rgba(255,255,255,.1);}
+
+.sidebar .troubleshooting {background:#fff; color:#000;}
 
 .sidebar-link-title {position:absolute; bottom:0; left:0; right:0; padding:8px var(--gutter); font-size:12px; background:linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%); color:#fff;}
 .sidebar-link-title h3 {margin-bottom:0; font-family:var(--header-font), sans-serif;}
@@ -321,6 +325,7 @@ pre.highlight {background:#110; color:#ffff1f; border-radius:10px; border:1px so
 .inventory-item-right {display:flex; flex-direction:column;}
 .inventory-item-image {width:100%; aspect-ratio:1 / 1;}
 .inventory-item-title {margin-bottom:10px; font-size:16px;}
+.inventory-item-settings {font-weight:bold; font-size:10px;}
 .inventory-item-description {font-size:12px; flex:1;}
 .inventory-item-bar {display:flex; gap:10px; align-items:center; margin-top:10px;}
 
@@ -355,11 +360,10 @@ a.tag-image:hover {text-decoration:none;}
 }
 
 .tip-container {position:relative; margin-bottom:40px;}
-.tip {padding:8px var(--gutter); color:#ff6; overflow:hidden; position:relative; background:#202; border-radius:4px;}
+.tip {padding:8px var(--gutter); color:#ff6; overflow:hidden; position:relative; background:#202; border-radius:4px; font-family:Righteous, sans-serif;}
 .tip-content b {color:#ff0;}
 .tip-icon {position:absolute; top:50%; margin-top:-12px; left:-12px; color:#ff0; text-shadow:1px 1px 1px rgba(0, 0, 0, .6);}
 .tip-title {font-weight:bold;}
-.tip-content {font-size:12px;}
 .tip-shimmer {
     position:absolute;
     top:0;
@@ -411,7 +415,7 @@ a.tag-image:hover {text-decoration:none;}
 .bom-post-total {font-size:16px; font-weight:bold; text-align:right;}
 .bom-post-total-label {font-size:12px; opacity:.6; text-align:right;}
 .bom-post-top {display:flex; align-items:center; justify-content:center; margin-bottom:20px; padding:10px; position:relative;}
-.bom-post-top img {width:128px; height:128px;}
+.bom-post-top img {width:256px; height:256px;}
 
 /* CARD */
 .card {display:block; margin-bottom:20px; color:#fff !important; text-align:left;}

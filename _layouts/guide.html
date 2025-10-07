@@ -2,8 +2,6 @@
 layout: default
 ---
 
-<!--{% include breadcrumbs.html %}-->
-
 {% include printer-context.liquid %}
 
 <div class="wrapper">
@@ -20,6 +18,10 @@ layout: default
             </li>
             {% endif %}
             {% endfor %}
+            <li class="spacer"></li>
+            <li>
+                <a href="/troubleshooting" class="troubleshooting">Troubleshooting</a>
+            </li>
         </ul>
     </aside>
 
@@ -34,8 +36,8 @@ layout: default
                     {{page.date | date: date_format}}
                 </time>
                 {% endif %}
-                <a href="https://github.com/jamesloper/lemontron/commits/main/{{page.path}}" target="_blank"
-                   class="material-icons">history</a>
+<!--                <a href="https://github.com/jamesloper/lemontron/commits/main/{{page.path}}" target="_blank"-->
+<!--                   class="material-icons">history</a>-->
             </p>
         </header>
         {% endif %}

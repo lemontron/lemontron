@@ -4,7 +4,7 @@ screws:
   M3x12/WFR:
     head: wafer-head
     thread: M3
-    length_mm: 12
+    length_mm: 10
     uses:
       - { name: Rear Idlers, qty: 2 }
     total: 1.77

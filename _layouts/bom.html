@@ -48,15 +48,27 @@ layout: default
         <!--        </time>-->
         <!--    </p>-->
 
-
         <ul class="bom-vendors">
             {% for link in item.links %}
             <li>
-                {% include button.html title=link.vendor icon="shopping_cart" link=link.url target="_blank" %}
+                {% include button.liquid title=link.vendor icon="shopping_cart" link=link.url target="_blank" %}
                 <span class="button-notes">{{link.note}}</span>
             </li>
             {% endfor %}
         </ul>
+
+        {% if item.resources %}
+        <br/>
+        <h3>Resources</h3>
+        <ul class="bom-vendors">
+            {% for link in item.resources %}
+            <li>
+                {% include button.liquid title=link.title icon="link" link=link.url target="_blank" %}
+                <span class="button-notes">{{link.note}}</span>
+            </li>
+            {% endfor %}
+        </ul>
+        {% endif %}
 
         <a class="u-url" href="{{page.url | relative_url}}" hidden></a>
     </article>

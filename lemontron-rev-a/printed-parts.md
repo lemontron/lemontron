@@ -1,10 +1,8 @@
 ---
 layout: guide
-title: Download
+title: Printed Parts
 icon: print
-header_title: Download
 description: Settings & Materials
-category: Assembly
 thumbnail: /assets/content/printed-parts.jpg
 ---
 
@@ -120,7 +118,7 @@ other_material="PLA" %}
 </ul>
 
 <div class="paragraph btn-wrapper">
-   {% include button.html 
+   {% include button.liquid 
    title="Download Lemontron on Printables"
    link=site.download_link
    icon="cloud_download"

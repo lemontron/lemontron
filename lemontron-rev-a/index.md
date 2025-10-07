@@ -6,9 +6,8 @@ header_title: Lemontron
 ---
 
 {% include tip.html 
-tip = "This is the documentation for Rev A-D. These are considered old, but the documentation is full and complete. Rev E is launching soon, but start here, you won't regret it." %}
-
-
+title = "Rev E is launching soon. This documentation is for Rev A-D!"
+tip = "These are considered old revisions, but the documentation is full and complete. Start here, you won't regret it." %}
 
 Lemontron is a DIY project - there are no kits - you must buy the parts online and assemble them.
 

@@ -1,0 +1,22 @@
+---
+layout: post
+title: Lemontron Troubleshooting
+permalink: /troubleshooting/
+---
+
+{%- assign posts = site.troubleshooting -%}
+
+<ul class="post-list">
+    {%- for post in posts -%}
+    <li class="post-list-item">
+        <div class="post-list-item-body">
+            <h3>
+                <a class="post-link" href="{{post.url | relative_url}}">
+                    {{post.title | escape}}
+                </a>
+            </h3>
+            {{ post.excerpt }}
+        </div>
+    </li>
+    {%- endfor -%}
+</ul>

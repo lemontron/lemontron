@@ -5,8 +5,10 @@ icon: home
 header_title: Lemontron
 ---
 
-Rev E documentation has not yet started! All there is, is the raw files. Please familiarize yourself with Rev A, then
-leap to Rev E.
+{% include tip.html
+title = "Rev E is in private beta! The Rev E build guide does not exist!"
+tip = "What you see here is all there is. Please familiarize
+yourself with Rev A, then join the Discord to apply to be a beta tester." %}
 
 ## Difficulty
 
@@ -119,22 +121,6 @@ image="/assets/tools/flush-cutters.png" %}
 <div class="bom-placeholder"></div>
 <div class="bom-placeholder"></div>
 </div>
-
-## About Rev E
-
-Rev E builds on the previous versions of Lemontron with a geared extruder, refined geometry, cooling performance.
-
-Previously, the Lemonstruder was an ender 3 extruder gear attached directly to the motor shaft. Without mechanical
-leverage, it ran hot, and there was no room for error, something that almost everyone had trouble with. Rev E adds an
-extensively tested 4.5:1 gear reduction, the Endgame Lemonstruder.
-
-There is also a new 225 degree wraparound ducted cooling tool end. This wasn’t just slapped together — I went through
-duct engineering hell: The result? High flow, unimpeded by complex ductwork, a sensible easy to picture flow that leaves
-little to the imagination, and real world cooling performance that shows a clear advantage.
-
-- E is also for CoolEEEng because this revision also implements art_nathan's motor cooling proposal, which buts the
-  fans right up to the motors so that the air can brush the sides of the motors. As a bonus there's enough space to
-  fix Vram cooling heatsinks to the motors for even more zest. So just look at it, that looks cool!
 
 ## Resources
 

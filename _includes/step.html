@@ -16,12 +16,12 @@
                 <b>L</b>
             </div>
             {%- endif -%}
-            <img src="/lemontron-rev-a/images/{{include.image}}" alt="{{include.alt}}">
+            <img src="/lemontron-rev-a/build-guide/{{include.image}}" alt="{{include.alt}}">
         </div>
         <div class="step-right">
             {% if include.buttonTitle %}
             <div>
-                {% include button.html
+                {% include button.liquid
                 icon=include.buttonIcon
                 title=include.buttonTitle
                 link=include.buttonLink

@@ -69,5 +69,5 @@ the [positron one](/lemontron-rev-a/bom/hotend) but it's a big upgrade.
 
 {% assign csv_link = '/' | append: slug | append: '/exports/bom.csv' %}
 <div class="paragraph">
-    {% include button.html title="Download CSV" icon="cloud_download" link=csv_link %}
+    {% include button.liquid title="Download CSV" icon="cloud_download" link=csv_link %}
 </div>

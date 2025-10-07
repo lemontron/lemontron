@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Software guide
-thumbnail: /lemontron-rev-a/images/intro---sd-card.jpg
+thumbnail: /lemontron-rev-a/build-guide/intro---sd-card.jpg
 categories: [guide]
 ---
 
@@ -13,7 +13,7 @@ Temporarily install `BOOT` and `USB Power` jumpers, connect it to your computer 
 
 ![SKR Pico Jumpers](/assets/content/skr-pico-jumpers.png)
 
-{% include button.html
+{% include button.liquid
 title="Download Firmware"
 icon="download"
 href="/assets/downloads/klipper.uf2" %}

@@ -15,6 +15,6 @@ most cost-reduced and refined version yet, with a fully 3d printed chassis that 
 3MF and Fusion project is now available to download!
 
 <div class="btn-wrapper">
-{% include button.html title="Build yours" link="/lemontron-rev-a/" %}
+{% include button.liquid title="Build yours" link="/lemontron-rev-a/" %}
 {% include kofi.html %}
 </div>
