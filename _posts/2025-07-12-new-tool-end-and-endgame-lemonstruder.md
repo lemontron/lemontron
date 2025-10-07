@@ -1,11 +1,9 @@
 ---
 layout: post
 title:  "New Tool End & Endgame Lemonstruder"
-header_title: "6 Month Update"
-categories: update
+categories: [news]
 thumbnail: /assets/content/tool-end.jpg
 banner: /assets/content/tool-end.jpg
-permalink: /news/:title
 ---
 
 Building a Lemontron now? In the past 6 months after the initial release, there are some new developments you have to be aware of to build the latest & greatest Lemontron!
@@ -20,7 +18,7 @@ Also, theres a new [Wrap Around Tool Head](https://www.printables.com/model/1304
 
 Because it would require 150+ new pictures and I can't do that right now. So please enjoy the new updates right now because there's no point in holding them back.
 
-{% include button.html
+{% include button.liquid
 title="Download Lemontron"
 link=site.download_link
 target="_blank" %}
