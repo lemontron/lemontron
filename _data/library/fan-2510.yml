@@ -2,9 +2,11 @@ title: 2510
 price: 2.25
 new: false
 links:
-  - vendor: AliExpress
-    url: https://www.aliexpress.us/item/3256803697135608.html
-    note: "24V, Dual Ball"
   - vendor: Amazon
     url: https://www.amazon.com/dp/B087Q7BJ8Y?&tag=lemontron-20
-    note: "24V, Blue LED, 4-pack"
+  - vendor: AliExpress
+    url: https://www.aliexpress.us/item/3256803697135608.html
+dimensions:
+  Width: 25mm
+  Depth: 10mm
+  Airflow (CFM): 4

@@ -19,3 +19,5 @@ md: |-
   
   ## Technical Drawing
   ![Drawing](/assets/content/5015-fan-technical.png)
+dimensions:
+  Airflow (CFM): 4.8
