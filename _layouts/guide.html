@@ -3,7 +3,6 @@ layout: default
 ---
 
 {% include printer-context.liquid %}
-
 <div class="wrapper">
     <aside class="sidebar">
         <ul>
@@ -44,6 +43,12 @@ layout: default
 
         <article itemscope itemtype="http://schema.org/BlogPosting">
             <div class="post-content e-content" itemprop="articleBody">
+                {% if page.banner %}
+                <div class="frame">
+                    <img src="{{page.banner}}" alt="{{page.title}}"/>
+                </div>
+                <br/>
+                {% endif %}
                 {{content}}
             </div>
 

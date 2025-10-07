@@ -2,13 +2,12 @@
 layout: guide
 title: Introduction
 icon: home
-header_title: Lemontron
+banner: /assets/content/rev-e-beta.jpg
 ---
 
 {% include tip.html
 title = "Rev E is in private beta! The Rev E build guide does not exist!"
-tip = "What you see here is all there is. Please familiarize
-yourself with Rev A, then join the Discord to apply to be a beta tester." %}
+tip = "Please familiarize yourself with Rev A, then join the Discord to apply to be a beta tester." %}
 
 ## Difficulty
 
