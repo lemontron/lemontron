@@ -7,10 +7,10 @@ youtube_username: lemontron
 bluesky_username: lemontron.com
 discord_link: https://discord.com/invite/gSjfn4rnrm
 download_link: https://www.printables.com/@Lemontron
-collections:
-  bom:
-    output: true
-    permalink: /lemontron/bom/:path/
 plugins:
   - jekyll-feed
-permalink: /blog/:title
+permalink: /:categories/:title
+collections:
+  troubleshooting:
+      output: true
+      permalink: /troubleshooting/:title

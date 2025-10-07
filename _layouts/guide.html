@@ -2,10 +2,31 @@
 layout: default
 ---
 
-{% include breadcrumbs.html %}
+{% include printer-context.liquid %}
 
-<div class="wrapper guides-page">
+<div class="wrapper">
+    <aside class="sidebar">
+        <ul>
+            {% assign rev = slug %}
+            {% for p in site.pages %}
+            {% if p.path contains rev and p.icon %}
+            <li>
+                <a href="{{p.url}}" class="{% if page.url == p.url %}active{% endif %}">
+                    <i class="material-icons">{{p.icon}}</i>
+                    <span>{{p.title}}</span>
+                </a>
+            </li>
+            {% endif %}
+            {% endfor %}
+            <li class="spacer"></li>
+            <li>
+                <a href="/troubleshooting" class="troubleshooting">Troubleshooting</a>
+            </li>
+        </ul>
+    </aside>
+
     <div class="guide {%if page.small%}post{%endif%}">
+        {% if page.title %}
         <header class="post-header">
             <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
             <p class="post-meta">
@@ -15,10 +36,12 @@ layout: default
                     {{page.date | date: date_format}}
                 </time>
                 {% endif %}
-                <a href="https://github.com/jamesloper/lemontron/commits/main/{{page.path}}" target="_blank"
-                   class="material-icons">history</a>
+<!--                <a href="https://github.com/jamesloper/lemontron/commits/main/{{page.path}}" target="_blank"-->
+<!--                   class="material-icons">history</a>-->
             </p>
         </header>
+        {% endif %}
+
         <article itemscope itemtype="http://schema.org/BlogPosting">
             <div class="post-content e-content" itemprop="articleBody">
                 {{content}}
@@ -31,4 +54,3 @@ layout: default
         </article>
     </div>
 </div>
-

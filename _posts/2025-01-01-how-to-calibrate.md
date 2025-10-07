@@ -2,8 +2,7 @@
 layout: post
 title:  "How to calibrate"
 categories: guide
-thumbnail: /assets/guide/calibration---adjust-screw.jpg
-permalink: /lemontron/how-to-calibrate/
+thumbnail: /lemontron-rev-a/build-guide/calibration---adjust-screw.jpg
 ---
 
 Once your Lemontron is assembled, you must do a one-time calibration! This is a very important step to ensure that your

@@ -1,10 +1,10 @@
 ---
 layout: post
 title: "JourneyMaker"
-categories: guide
+categories: [news]
 thumbnail: /assets/content/journeymaker.jpg
 banner: /assets/content/journeymaker.jpg
-permalink: /lemontron/:title
+slug: journeymaker
 ---
 
 Lemontron takes the best parts of the JourneyMaker, Positron v3.2, and Positron LT. But why did I wait until the

@@ -1,0 +1,115 @@
+name: Rev A
+header: "Positron-style portable printer"
+screws:
+  M3x8/CSK:
+    head: countersunk
+    din: DIN7991
+    thread: M3
+    length_mm: 8
+    uses:
+      - { name: Z-Rail, qty: 6, image: "z-axis---install-rail.jpg" }
+      - { name: Lemonstruder, qty: 1, image: "lemonstruder---insert-screw.jpg" }
+      - { name: Motors, qty: 4, image: "midplate---left---motor-mounts.jpg" }
+      - { name: Lead Nut, qty: 3, image: "z-axis---screw-lead-nut.jpg" }
+      - { name: Risers, qty: 4, image: "chassis---risers.jpg" }
+      - { name: Clip, qty: 2, image: "chassis---tool---attach-clip.jpg" }
+    total: 1.44
+    link: "https://www.aliexpress.us/item/3256805993813459.html"
+    irreplaceable: true
+  M3x14/CSK:
+    head: countersunk
+    din: DIN7991
+    thread: M3
+    length_mm: 14
+    uses:
+      - { name: Tool Head, qty: 2, image: "chassis---tool---screws.jpg" }
+      - { name: Top Plates, qty: 4, image: "top-plates---inner-screws.jpg" }
+      - { name: Y-Rail, qty: 9, image: "chassis---fasten-rail.jpg" }
+      - { name: Bed Holder, qty: 5, image: "bed-holder---attach-spine.jpg" }
+    total: 1.73
+    link: "https://www.aliexpress.us/item/3256805993813459.html"
+    irreplaceable: true
+  M3x20/CSK:
+    head: countersunk
+    din: DIN7991
+    thread: M3
+    length_mm: 20
+    uses:
+      - { name: XY Spacer, qty: 2, image: "rail---attach-x-rail.jpg" }
+      - { name: Mid Plates, qty: 2, image: "midplate---right---locator-screw.jpg" }
+      - { name: Y-Rail Bonus, qty: 1, image: "chassis---bonus-screw.jpg" }
+      - { name: Top Plates, qty: 4, image: "top-plates---outer-screws.jpg" }
+    total: 2.07
+    link: "https://www.aliexpress.us/item/3256805993813459.html"
+  M3x12/BTN:
+    head: button-head
+    din: DIN7380
+    thread: M3
+    length_mm: 12
+    uses:
+      - { name: Tensioner, qty: 2, image: "rail---tensioner---install-bearings.jpg" }
+      - { name: Clamp, qty: 1, image: "tool---insert-clamp.jpg" }
+    total: 1.81
+    link: "https://www.aliexpress.us/item/2251832624537980.html"
+  M3x16/BTN:
+    head: button-head
+    din: DIN7380
+    thread: M3
+    length_mm: 16
+    uses:
+      - { name: Bearing Tower, qty: 2, image: "rail---install-bearing-towers.jpg" }
+      - { name: Z-Block, qty: 2, image: "chassis---screw-in-z-axis.jpg" }
+    total: 2.17
+    link: "https://www.aliexpress.us/item/2251832624537980.html"
+  M3x20/BTN:
+    head: button-head
+    din: DIN7380
+    thread: M3
+    length_mm: 20
+    uses:
+      - { name: Bed Screws, qty: 2, image: "bed-holder---posts.jpg" }
+    total: 2.40
+    link: "https://www.aliexpress.us/item/2251832624537980.html"
+  M3x40/BTN:
+    head: button-head
+    din: DIN7380
+    thread: M3
+    length_mm: 40
+    uses:
+      - { name: Bed Holder, qty: 2, image: "bed-holder---insert-screws.jpg" }
+      - { name: Spool, qty: 1 }
+    total: 2.64
+    link: "https://www.aliexpress.us/item/2255799841823122.html"
+  M3x14/WFR:
+    head: wafer-head
+    thread: M3
+    length_mm: 14
+    uses:
+      - { name: Fans, qty: 8, image: "chassis---insert-right-fan.jpg" }
+      - { name: Z Idler, qty: 2, image: "chassis---attach-z-idler.jpg" }
+      - { name: X Idlers, qty: 2, image: "rail---x---add-nuts.jpg" }
+      - { name: AC Plug, qty: 2, image: "chassis---ac-input.jpg" }
+      - { name: A/B Idlers, qty: 2, image: "midplate---right---upper-pulley.jpg" }
+    total: 1.30
+    link: "https://www.aliexpress.us/item/2255800885711092.html"
+  M3x25/WFR:
+    head: wafer-head
+    thread: M3
+    length_mm: 25
+    uses:
+      - { name: A/B Idlers, qty: 2, image: "midplate---right---lower-pulley.jpg" }
+      - { name: Bracket, qty: 2, image: "z-axis---tighten-bracket.jpg" }
+      - { name: Tensioner, qty: 1, image: "tensioner---screw.jpg" }
+    total: 1.70
+    link: "https://www.aliexpress.us/item/2255800885711092.html"
+  M2.5x6/CSK:
+    head: countersunk
+    thread: M2.5
+    length_mm: 6
+    uses:
+      - { name: Heatsink, qty: 4, image: "tool---fasten-hotend.jpg" }
+      - { name: PCB, qty: 4, image: "tool---fasten-pcb.jpg" }
+      - { name: Probe, qty: 2, image: "tool---fasten-probe.jpg" }
+      - { name: Raspberry Pi, qty: 4, image: "chassis---screw-raspberry-pi.jpg" }
+    total: 1.25
+    link: "https://www.aliexpress.us/item/2255801013414226.html"

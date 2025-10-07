@@ -98,16 +98,12 @@
                             <span>Discord</span>
                         </a>
                     </li>
-                    <li>
-                        <a href="https://photos.app.goo.gl/ymJsbDJciHWHy3QJ8" target="_blank">
-                            <img src="/assets/icons/google-photos.svg" height="16" width="16" alt="Google Photos">
-                            Photos
-                        </a>
-                    </li>
                 </ul>
             </div>
         </div>
-        {% if page.kofi %}
+        {% if page.hideDonate %}
+
+        {% else %}
         {% include kofi.html %}
         {% endif %}
     </div>

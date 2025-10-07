@@ -1,0 +1,13 @@
+price: 1.60
+new: false
+links:
+  - vendor: Amazon
+    url: https://www.amazon.com/dp/B07SBKMZDB?&tag=lemontron-20
+    note: Capricorn
+  - vendor: AliExpress
+    url: https://www.aliexpress.us/item/3256806655683811.html
+    note: Capricorn
+  - vendor: AliExpress
+    url: https://www.aliexpress.us/item/3256806056618135.html
+    note: Generic
+md: Capricorn tubes has a more precise inner diameter which means less snags and higher print accuracy.

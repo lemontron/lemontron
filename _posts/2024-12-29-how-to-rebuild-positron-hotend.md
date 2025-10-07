@@ -2,9 +2,8 @@
 layout: post
 title:  "How to rebuild the Positron 90 Hotend"
 categories: guide
-thumbnail: /assets/guide/hotend.jpg
-banner: /assets/guide/hotend.jpg
-permalink: /lemontron/:title
+thumbnail: /lemontron-rev-a/build-guide/hotend.jpg
+banner: /lemontron-rev-a/build-guide/hotend.jpg
 ---
 
 Despite its savage heat, high flow rate, solid engineering & high quality construction, there is one an issue with the Positron 90

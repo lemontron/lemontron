@@ -1,0 +1,9 @@
+title: IEC320 C7
+info: Also known as a "Figure 8" socket, it is commonly found in laptop power supplies and Lemontrons.
+price: 1.30
+new: true
+links:
+  - vendor: Amazon
+    url: https://www.amazon.com/dp/B09X74LHSV
+  - vendor: AliExpress
+    url: https://www.aliexpress.us/item/2251832621937815.html

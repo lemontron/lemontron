@@ -1,30 +1,23 @@
 {% assign head_length = 2 %}
 
-{%- if include.type == "countersunk" -%}
+{%- if include.head == "countersunk" -%}
 {%- assign head_length = 0 -%}
 {%- endif -%}
-{%- if include.type == "wafer-head" -%}
+
+{%- if include.head == "wafer-head" -%}
 {%- assign head_length = 1 -%}
 {%- endif -%}
 
-{%- assign length = include.length | plus: head_length -%}
+{%- assign length = include.length_mm | plus: head_length -%}
 {%- assign px = length | times: 4 -%}
-
-{%- if px > 200 %}
-{%- assign px = 200 %}
-{%- endif %}
-
 {%- assign scale = include.thread | remove_first: "M" | divided_by: 3 -%}
 
 <div class="screw">
-    <div class="icon-screw" style="width:{{px}}px" data-nominal="{{include.length}}" data-overall="{{length}}">
-        <img src="/assets/icons/{{screw.type}}.svg" alt="{{screw.type}}" style="transform:scale({{scale}});">
+    <div class="icon-screw" style="width:{{px}}px" data-nominal="{{include.length_mm}}" data-overall="{{length_mm}}">
+        <img src="/assets/icons/{{screw.head}}.svg" alt="{{screw.head}}" style="transform:scale({{scale}});">
     </div>
     <div class="screw-type">{{include.thread}}</div>
-    <div class="screw-length">{{include.length}}mm</div>
-    <!--    {%- if include.irreplaceable -%}-->
-    <!--    <i class="material-icons screw-irreplaceable">favorite</i>-->
-    <!--    {%- endif -%}-->
+    <div class="screw-length">{{include.length_mm}}mm</div>
     {%- if include.qty > 0 -%}
     <div>&times;{{include.qty}}</div>
     {%- endif -%}

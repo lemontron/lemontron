@@ -2,7 +2,7 @@
 layout: post
 title:  "Lemontron joins migration to Printables"
 header_title: Printables update
-categories: update
+categories: news
 thumbnail: /assets/content/printables.png
 permalink: /news/:title
 ---
@@ -22,7 +22,7 @@ printer and I fell for it. I will not be accepting a sponsorship from Bambu.
 
 From now on I will be doing my official releases through a platform that deserves our trust-- Printables by Prusa!
 
-{% include button.html
-title="Download Lemontron"
+{% include button.liquid
+title="Download Lemontron on Printables"
 link=site.download_link
 target="_blank" %}

@@ -37,14 +37,4 @@
         <priority>0.5</priority>
     </url>
     {% endfor %}
-
-    {% for item in site.bom %}
-    <!-- [BOM] {{item.title}} -->
-    <url>
-        <loc>{{item.url | absolute_url}}</loc>
-        <lastmod>{{item.date | default: site.time | date_to_xmlschema}}</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.5</priority>
-    </url>
-    {% endfor %}
 </urlset>
