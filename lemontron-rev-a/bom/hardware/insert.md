@@ -1,7 +1,10 @@
 ---
 layout: bom
-title: M3 Brass Insert
+title: Brass Inserts
 qty: 9
 ---
 
-2 hold on the top plates, 2 hold on the idler pulley, 2 hold on the z axis, 1 holds the XY belt tensioner.
+1. 2 hold on the top plates
+2. 2 hold on the idler pulley
+3. 2 hold on the z axis
+4. 1 holds the XY belt tensioner

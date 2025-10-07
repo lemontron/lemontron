@@ -5,3 +5,6 @@ links:
   - vendor: Amazon
     url: https://www.amazon.com/dp/B087TBB8YV?&tag=lemontron-20
     note: 4-pack
+dimensions:
+  Height: 30mm
+  Depth: 10mm

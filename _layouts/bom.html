@@ -6,6 +6,8 @@ layout: default
 {%- assign slug = page.url | split: '/' | last -%}
 {%- assign item = site.data.library[slug] -%}
 
+{% include breadcrumbs.html %}
+
 <div class="post">
     <div class="post-header">
         <div>
@@ -36,10 +38,28 @@ layout: default
 
     <article class="bom" itemscope itemtype="http://schema.org/BlogPosting">
         <div class="post-content e-content" itemprop="articleBody">
-            {{item.md | markdownify}}
-
-            <h2>{{printer.name}} Notes</h2>
             {{content}}
+            {% if item.md %}
+            <div>
+                <h2>Details</h2>
+                {{item.md | markdownify}}
+            </div>
+            {% endif %}
+
+            {%if item.dimensions %}
+            <table class="dimensions-table">
+                <tr>
+                    <th>Dimension</th>
+                    <th class="numeric">Measurement</th>
+                </tr>
+                {% for data in item.dimensions %}
+                <tr>
+                    <td>{{data[0]}}</td>
+                    <td class="numeric">{{data[1]}}</td>
+                </tr>
+                {% endfor %}
+            </table>
+            {% endif %}
         </div>
         <!--    <p class="post-meta">-->
         <!--        <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">-->

@@ -7,4 +7,9 @@ links:
     note: 6x3x10, Yellow, 5pcs
   - vendor: Amazon
     url: https://www.amazon.com/dp/B0C33CBKFY?&tag=lemontron-20
+    note: Stiffer, but works well
 md: Boing!
+dimensions:
+  Outer Diameter: 6mm
+  Inner Diameter: 3mm
+  Length: 10mm

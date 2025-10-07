@@ -455,3 +455,6 @@ a.tag-image:hover {text-decoration:none;}
 .printing-tip-description {font-family:var(--header-font), sans-serif;}
 .printing-tip-subtitle {opacity:0.5; font-size:11px;}
 .printing-tip img {height:100px; width:100px;}
+
+/* TABLE */
+.numeric {text-align:right;}

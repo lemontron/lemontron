@@ -4,7 +4,8 @@ new: true
 links:
   - vendor: AliExpress
     url: https://www.aliexpress.us/item/2251832783805221.html
-md: |-
-  | **Bore**  | 5mm   |
-  | **OD**    | 7mm   |
-  | **Pitch** | 1.5mm |
+dimensions:
+  Inner Diameter: 5mm
+  Outer Diameter: 7mm
+  Gear Pitch: 1.5mm
+  Grub Screw: M3

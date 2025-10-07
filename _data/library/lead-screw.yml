@@ -4,6 +4,8 @@ new: false
 links:
   - vendor: AliExpress
     url: https://www.aliexpress.us/item/3256804397445121.html
-md: |-
-  Pitch 1mm Lead 4mm, 250mm, includes nut.
-  This compact and inexpensive lead screw is used to move the Z-axis up and down. It is 250mm long with a 4mm lead and 1mm pitch.
+md: Includes the nut.
+dimensions:
+  Pitch: 1mm
+  Lead: 4mm
+  Length: 250mm

@@ -4,3 +4,7 @@ new: true
 links:
   - vendor: AliExpress
     url: https://www.aliexpress.us/item/3256803873360290.html
+dimensions:
+  Inner Diameter: 3mm
+  Outer Diameter: 12mm
+  Thickness: 1mm

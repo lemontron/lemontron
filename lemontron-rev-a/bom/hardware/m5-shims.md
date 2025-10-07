@@ -4,4 +4,6 @@ title: M5 Shims
 qty: 2
 ---
 
-The OD can also be 9mm and still work. We only need two of these for the lead screw drive pulley.
+The OD can also be 9mm and still work. 
+
+1. 2 for the lead screw drive pulley

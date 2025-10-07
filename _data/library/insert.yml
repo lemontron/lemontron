@@ -1,10 +1,13 @@
-title: M3 x 10mm
+title: M3x5x10
 price: 0.34
 description:
 new: true
 links:
   - vendor: AliExpress
     url: https://www.aliexpress.us/item/3256805590685220.html
-    note: M3 (OD 5mm)50pcs, Length 10mm
 md: |-
   These brass inserts are extra long and go in straight.
+dimensions:
+  Width: 5mm
+  Length: 10mm
+  Thread: M3

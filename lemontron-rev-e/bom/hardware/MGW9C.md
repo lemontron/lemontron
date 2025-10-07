@@ -3,5 +3,4 @@ layout: bom
 title: Z-Axis Rail
 qty: 1
 ---
-
-{% include tips/rails.html %}
+Serves as the vertical (z-axis) rail.
