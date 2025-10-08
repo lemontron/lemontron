@@ -8,46 +8,35 @@ layout: default
 
 {% include breadcrumbs.html %}
 
-<div class="post">
-    <div class="post-header">
-        <div>
-            <h1 itemprop="name headline">{{page.title | escape}}</h1>
-            <div>{{item.title}}</div>
-        </div>
-        <div>
-            <div class="bom-post-total">${{item.price | multiply: page.qty}}</div>
-            <div class="bom-post-total-label">Total</div>
-        </div>
-    </div>
-
-    <div class="bom-post-top frame">
-        <img src="/assets/bom/{{slug}}.png" alt="{{page.title}}" itemprop="image">
-
-        <div class="bom-badges">
-            {% if item.new %}
-            <span class="badge new">New</span>
-            {% endif %}
-            {% if page.modification %}
-            <span class="badge mod"><i class="material-icons">carpenter</i> Mod</span>
-            {% endif %}
-            {%- if page.qty > 1 -%}
-            <span class="badge qty">×{{page.qty}}</span>
-            {%- endif -%}
-        </div>
-    </div>
-
-    <article class="bom" itemscope itemtype="http://schema.org/BlogPosting">
-        <div class="post-content e-content" itemprop="articleBody">
-            {{content}}
-            {% if item.md %}
-            <div>
-                <h2>Details</h2>
-                {{item.md | markdownify}}
+<div class="post bom-page">
+    <div class="bom-header">
+        <img class="bom-page-image" src="/assets/bom/{{slug}}.png" alt="{{page.title}}">
+        <div class="bom-page-top">
+            <h1>{{page.title | escape}}</h1>
+            <h2>{{item.title}}</h2>
+            <div class="bom-badges">
+                {% if item.new %}
+                <span class="badge new" title="New badge refers to parts that were not present in the original JourneyMaker 3d printer.">New</span>
+                {% endif %}
+                <span class="badge qty">×{{page.qty}}</span>
+                <span class="badge">${{item.price | multiply: page.qty}}</span>
             </div>
-            {% endif %}
+        </div>
+    </div>
 
-            {%if item.dimensions %}
-            <table class="dimensions-table">
+    <article class="bom-page-article" itemscope itemtype="http://schema.org/BlogPosting">
+        <div>{{content}}</div>
+
+        {% if item.md %}
+        <div>
+            <h2>Product Details</h2>
+            {{item.md | markdownify}}
+        </div>
+        {% endif %}
+
+        {%if item.dimensions %}
+        <div class="dimensions-table">
+            <table>
                 <tr>
                     <th>Dimension</th>
                     <th class="numeric">Measurement</th>
@@ -59,14 +48,28 @@ layout: default
                 </tr>
                 {% endfor %}
             </table>
-            {% endif %}
         </div>
+        {% endif %}
         <!--    <p class="post-meta">-->
         <!--        <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">-->
         <!--            {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}-->
         <!--            {{ page.date | date: date_format }}-->
         <!--        </time>-->
         <!--    </p>-->
+
+        {% if item.resources %}
+        <div>
+            <h3>Resources</h3>
+            <ul class="bom-vendors">
+                {% for link in item.resources %}
+                <li>
+                    {% include button.liquid title=link.title icon="link" link=link.url target="_blank" %}
+                    <span class="button-notes">{{link.note}}</span>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+        {% endif %}
 
         <ul class="bom-vendors">
             {% for link in item.links %}
@@ -76,20 +79,5 @@ layout: default
             </li>
             {% endfor %}
         </ul>
-
-        {% if item.resources %}
-        <br/>
-        <h3>Resources</h3>
-        <ul class="bom-vendors">
-            {% for link in item.resources %}
-            <li>
-                {% include button.liquid title=link.title icon="link" link=link.url target="_blank" %}
-                <span class="button-notes">{{link.note}}</span>
-            </li>
-            {% endfor %}
-        </ul>
-        {% endif %}
-
-        <a class="u-url" href="{{page.url | relative_url}}" hidden></a>
     </article>
 </div>

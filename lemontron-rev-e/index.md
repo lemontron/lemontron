@@ -1,5 +1,5 @@
 ---
-layout: guide
+layout: documentation
 title: Introduction
 icon: home
 banner: /assets/content/rev-e-beta.jpg

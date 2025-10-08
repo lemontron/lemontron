@@ -1,5 +1,5 @@
 ---
-layout: guide
+layout: documentation
 title: Printed Parts
 icon: print
 description: Settings & Materials

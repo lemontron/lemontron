@@ -1,10 +1,10 @@
 <head>
     <meta charset="utf-8">
     <title>{{page.title | default: 'Home'}} | Lemontron</title>
-    <meta name="description" content="{{site.description}}">
+    <meta name="description" content="{{page.description | default: site.description}}">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="/styles.css?v={{site.time | date: '%s'}}">
-    {% if jekyll.environment == "production" %}
+
+    {%- if jekyll.environment == "production" -%}
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-RPV6DG694N"></script>
     <script>
 		window.dataLayer = window.dataLayer || [];
@@ -13,7 +13,22 @@
 		gtag('config', 'G-RPV6DG694N');
     </script>
     {% endif %}
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/styles.css?v={{site.time | date: '%s'}}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+
+    <!-- Open Graph ({{page.layout | capitalize}}) -->
+    {% if page.layout == 'bom' -%}
+    <meta property="og:title" content="{{page.title}}">
+    <meta property="og:type" content="product">
+    <meta property="og:image" content="{{site.url}}/assets/bom/{{page.url | split: '/' | last}}.png">
+    {% else -%}
+    <meta property="og:title" content="{{page.title}}">
+    <meta property="og:type" content="article">
+    {% if page.thumbnail %}<meta property="og:image" content="{{page.thumbnail | absolute_url}}">{% endif %}
+    {% endif -%}
+    <meta property="og:url" content="{{page.url | absolute_url}}">
 </head>

@@ -1,4 +1,5 @@
 name: Rev A
+nameFull: Lemontron Rev A
 header: "Positron-style portable printer"
 screws:
   M3x8/CSK:

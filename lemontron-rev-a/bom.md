@@ -1,5 +1,5 @@
 ---
-layout: guide
+layout: documentation
 title: BOM
 icon: shopping_cart
 ---
@@ -35,22 +35,22 @@ trimming, cutting, etc. are marked with MOD.
 ## Positron Parts
 
 {% assign positron = bom | where_exp: "item", "item.url contains '/positron/'" %}
-{% include bom_list.html items=positron %}
+{% include bom-list.html items=positron %}
 
 ## Hardware
 
 {% assign hardware = bom | where_exp: "item", "item.url contains '/hardware/'" %}
-{% include bom_list.html items=hardware %}
+{% include bom-list.html items=hardware %}
 
 ## Electronics
 
 {% assign electronics = bom | where_exp: "item", "item.url contains '/electronics/'" %}
-{% include bom_list.html items=electronics %}
+{% include bom-list.html items=electronics %}
 
 ## Optional Upgrades
 
 {% assign bom_optional = bom | where_exp: "item", "item.url contains '/optional/'" %}
-{% include bom_list.html items=bom_optional %}
+{% include bom-list.html items=bom_optional %}
 
 ## Screws (${{printer_screws_price}})
 

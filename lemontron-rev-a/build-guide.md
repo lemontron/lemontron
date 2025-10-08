@@ -1,5 +1,5 @@
 ---
-layout: guide
+layout: documentation
 title: Build Guide
 icon: carpenter
 thumbnail: /assets/guide/chassis---tool---screws.jpg

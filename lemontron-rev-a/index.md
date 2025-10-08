@@ -1,5 +1,5 @@
 ---
-layout: guide
+layout: documentation
 title: Introduction
 icon: home
 header_title: Lemontron

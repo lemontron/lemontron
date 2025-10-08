@@ -9,7 +9,15 @@
             {% if printer %}
             <div class="segmented">
                 {% for printer in site.data.printers %}
-                <a href="/{{printer[0]}}/" class="{%if slug == printer[0]%}active{%endif%}">{{printer[1].name}}</a>
+
+                {%- assign swapped = page.url | replace: slug, printer[0] -%}
+                {%- assign exists = site.pages | where: "url", swapped | first -%}
+
+                {%- unless exists -%}
+                {%- assign swapped = "/" | append: printer[0] -%}
+                {%- endunless -%}
+
+                <a href="{{swapped}}" class="{%if slug == printer[0]%}active{%endif%}">{{printer[1].name}}</a>
                 {% endfor %}
             </div>
             {% else %}
