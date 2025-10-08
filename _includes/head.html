@@ -22,11 +22,11 @@
 
     <!-- Open Graph ({{page.layout | capitalize}}) -->
     {% if page.layout == 'bom' -%}
-    <meta property="og:title" content="{{page.title}}">
+    <meta property="og:title" content="{{page.title | escape}}">
     <meta property="og:type" content="product">
     <meta property="og:image" content="{{site.url}}/assets/bom/{{page.url | split: '/' | last}}.png">
     {% else -%}
-    <meta property="og:title" content="{{page.title}}">
+    <meta property="og:title" content="{{page.title | escape}}">
     <meta property="og:type" content="article">
     {% if page.thumbnail %}<meta property="og:image" content="{{page.thumbnail | absolute_url}}">{% endif %}
     {% endif -%}
