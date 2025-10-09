@@ -84,7 +84,7 @@ a.frame:hover:after, a:hover .frame:after {border:2px solid #ff0;}
 article {margin-bottom:40px;}
 .post-content a {color:#09f;}
 .post-content a:hover {text-decoration:underline;}
-.post-troubleshooting label {background:#212; padding:5px 10px; display:flex; margin-bottom:10px; border-radius:10px; font-size:12px; font-weight:bold; text-transform:uppercase;}
+.post-troubleshooting label {background:#202; padding:5px 10px; display:flex; margin-bottom:10px; border-radius:10px; font-size:12px; font-weight:bold; text-transform:uppercase;}
 
 blockquote {color:#828282; border-left:4px solid #e8e8e8; padding-left:15px; font-size:18px;}
 blockquote > :last-child {margin-bottom:0;}
@@ -294,17 +294,15 @@ pre.highlight {background:#110; color:#ffff1f; border-radius:10px; border:1px so
 /* GUIDES PAGE LAYOUT */
 .sidebar {overflow:auto; margin:10px var(--gutter); font-size:16px; font-family:var(--header-font), sans-serif; white-space:nowrap;}
 .sidebar::-webkit-scrollbar {display:none;}
-.sidebar ul {list-style:none; margin:0; display:flex;}
+.sidebar ul {list-style:none; margin:0; display:flex; gap:5px;}
 .sidebar li.spacer {flex:1;}
-.sidebar ul li a {display:flex; align-items:center; gap:5px; color:var(--color); padding:5px 15px; border:1px solid transparent; border-radius:20px;}
+.sidebar ul li a {display:flex; align-items:center; gap:5px; color:var(--color); padding:5px 15px; border-radius:20px;}
 .sidebar ul li a i {font-size:16px; flex-shrink:0;}
-.sidebar ul li a.active {background:#313; color:#ff0; border-color:rgba(255,255,255,.1);}
+.sidebar ul li a:hover {background:#202;}
+.sidebar ul li a.active {background:#ff0; color:#000;}
 
 .sidebar .troubleshooting {background:#fff; color:#000;}
 
-.sidebar-link-title {position:absolute; bottom:0; left:0; right:0; padding:8px var(--gutter); font-size:12px; background:linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%); color:#fff;}
-.sidebar-link-title h3 {margin-bottom:0; font-family:var(--header-font), sans-serif;}
-.sidebar-link-description {font-size:10px;}
 .guide {padding:var(--gutter);}
 
 @media (min-width:800px) {
@@ -331,7 +329,7 @@ pre.highlight {background:#110; color:#ffff1f; border-radius:10px; border:1px so
 
 /* MATERIAL TAG */
 .tag {display:inline-flex; color:#fff; overflow:hidden; font-size:10px; background:#22f; border-radius:4px; height:var(--input); align-items:center; cursor:default; white-space:nowrap;}
-.tag-label {background:#212; padding:0 10px; align-items:center; display:flex; gap:5px; height:100%;}
+.tag-label {background:#202; padding:0 10px; align-items:center; display:flex; gap:5px; height:100%;}
 .tag-value {color:#fff; padding:0 5px;}
 a.tag-image {font-size:12px; background:#222;}
 a.tag-image:hover {text-decoration:none;}
@@ -360,25 +358,10 @@ a.tag-image:hover {text-decoration:none;}
 }
 
 .tip-container {position:relative; margin-bottom:40px;}
-.tip {padding:8px var(--gutter); color:#ff6; overflow:hidden; position:relative; background:#202; border-radius:4px; font-family:Righteous, sans-serif;}
+.tip {padding:10px var(--gutter); color:#ff6; overflow:hidden; position:relative; background:#202; border-radius:10px; font-family:Righteous, sans-serif;}
 .tip-content b {color:#ff0;}
 .tip-icon {position:absolute; top:50%; margin-top:-12px; left:-12px; color:#ff0; text-shadow:1px 1px 1px rgba(0, 0, 0, .6);}
 .tip-title {font-weight:bold;}
-.tip-shimmer {
-    position:absolute;
-    top:0;
-    left:0;
-    height:100%;
-    width:100%;
-    background:linear-gradient(-45deg, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0.06) 50%, rgba(255, 255, 255, 0) 75%);
-    animation:shimmer 10s infinite;
-    pointer-events:none;
-}
-
-@keyframes shimmer {
-    0% {transform:translateX(-100%);}
-    50% {transform:translateX(100%);}
-}
 
 /* GUIDE */
 .steps {margin:0; list-style:none; counter-reset:item;}
@@ -392,7 +375,7 @@ a.tag-image:hover {text-decoration:none;}
 .step-optional b {display:block; transform:rotate(135deg); margin:-1px 0;}
 .step-screw {}
 .step-right {display:flex; flex-direction:column; gap:20px;}
-.screw-pill {background:#212; display:inline-flex; align-items:center; padding:0 16px; border-radius:8px; height:36px;}
+.screw-pill {background:#202; display:inline-flex; align-items:center; padding:0 16px; border-radius:8px; height:36px;}
 
 /* BOM */
 .bom-list {margin-bottom:20px; display:grid; grid-template-columns: repeat(auto-fit, minmax(160px, 3fr)); gap:var(--gap);}
@@ -458,7 +441,7 @@ a.tag-image:hover {text-decoration:none;}
 .nav-bar a {padding:0 8px; height:18px; border-radius:9px; display:flex;}
 .nav-bar a.active {color:#000; background:#fff;}
 
-.segmented {font-family:var(--header-font), sans-serif; font-size:12px; padding:3px; border:1px solid rgba(255,255,255,.1); border-radius:20px; display:flex; align-items:center;}
+.segmented {font-family:var(--header-font), sans-serif; font-size:12px; padding:2px; border:2px solid #ff0; border-radius:20px; display:flex; align-items:center;}
 .segmented a {padding:0 8px; height:20px; border-radius:9px; display:flex;}
 .segmented a.active {color:#000; background:#ff0;}
 

@@ -5,11 +5,11 @@ screws:
   M3x12/WFR:
     head: wafer-head
     thread: M3
-    length_mm: 10
+    length_mm: 12
     uses:
       - { name: Rear Idlers, qty: 2 }
     total: 1.77
-    link: "https://www.aliexpress.us/item/2255800885711092.html"
+    link: "https://www.aliexpress.com/item/2255800885711092.html"
   M3x14/WFR:
     head: wafer-head
     thread: M3
@@ -26,7 +26,7 @@ screws:
       - { name: Bed Holder, qty: 2 }
       - { name: Tool Head, qty: 2 }
     total: 1.77
-    link: "https://www.aliexpress.us/item/2255800885711092.html"
+    link: "https://www.aliexpress.com/item/2255800885711092.html"
   M3x25/WFR:
     head: wafer-head
     thread: M3
@@ -35,7 +35,7 @@ screws:
       - { name: A/B Idlers, qty: 2 }
       - { name: Bracket, qty: 2 }
     total: 2.12
-    link: "https://www.aliexpress.us/item/2255800885711092.html"
+    link: "https://www.aliexpress.com/item/2255800885711092.html"
   M3x8/CSK:
     head: countersunk
     din: DIN7991
@@ -50,7 +50,7 @@ screws:
       - { name: Clip, qty: 2 }
       - { name: Tensioner, qty: 2 }
     total: 1.44
-    link: "https://www.aliexpress.us/item/3256805993813459.html"
+    link: "https://www.aliexpress.com/item/3256805993813459.html"
   M3x20/CSK:
     head: countersunk
     din: DIN7991
@@ -64,7 +64,7 @@ screws:
       - { name: Bed Screws, qty: 2 }
       - { name: Bed Holder, qty: 5 }
     total: 2.07
-    link: "https://www.aliexpress.us/item/3256805993813459.html"
+    link: "https://www.aliexpress.com/item/3256805993813459.html"
   M2.5x6/CSK:
     head: countersunk
     thread: M2.5
@@ -76,7 +76,7 @@ screws:
       - { name: Raspberry Pi, qty: 4 }
       - { name: Clamp, qty: 1 }
     total: 1.25
-    link: "https://www.aliexpress.us/item/2255801013414226.html"
+    link: "https://www.aliexpress.com/item/2255801013414226.html"
   M3x40/BTN:
     head: button-head
     din: DIN7380
@@ -86,4 +86,4 @@ screws:
       - { name: Bed Holder, qty: 2 }
       - { name: Spool, qty: 1 }
     total: 2.64
-    link: "https://www.aliexpress.us/item/2255799841823122.html"
+    link: "https://www.aliexpress.com/item/2255799841823122.html"
