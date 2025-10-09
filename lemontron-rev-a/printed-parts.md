@@ -4,6 +4,7 @@ title: Printed Parts
 icon: print
 description: Settings & Materials
 thumbnail: /assets/content/printed-parts.jpg
+order: 1
 ---
 
 {%- include tips/printing-tips.html -%}

@@ -3,11 +3,14 @@ layout: default
 ---
 
 {% include printer-context.liquid %}
+
+{% assign rev = slug %}
+{% assign sorted_pages = site.pages | sort: 'order' %}
+
 <div class="wrapper">
     <aside class="sidebar">
         <ul>
-            {% assign rev = slug %}
-            {% for p in site.pages %}
+            {% for p in sorted_pages %}
             {% if p.path contains rev and p.icon %}
             <li>
                 <a href="{{p.url}}" class="{% if page.url == p.url %}active{% endif %}">

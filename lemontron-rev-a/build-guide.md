@@ -3,6 +3,7 @@ layout: documentation
 title: Build Guide
 icon: carpenter
 thumbnail: /assets/guide/chassis---tool---screws.jpg
+order: 3
 ---
 
 <ol class="steps">

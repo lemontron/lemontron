@@ -3,7 +3,13 @@ layout: documentation
 title: Introduction
 icon: home
 banner: /assets/content/rev-e-beta.jpg
+order: 0
 ---
+
+Rev E builds on the previous Lemontrons with the Endgame Lemonstruder, the final design with a 4.5:1 gear reduction +
+100% PTFE filament path, a relocated tensioner unlocking extra rigidity, quad fans that are also bigger, a wraparound
+tool head, and _hundreds_ of other tiny tweaks improving fitment, further shaving the BOM, and increased
+rigidity throughout.
 
 {% include tip.html
 title = "Rev E is in private beta! The Rev E build guide does not exist!"

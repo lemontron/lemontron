@@ -292,16 +292,14 @@ pre.highlight {background:#110; color:#ffff1f; border-radius:10px; border:1px so
 .highlight .il {color:#099;}
 
 /* GUIDES PAGE LAYOUT */
-.sidebar {overflow:auto; margin:10px var(--gutter); font-size:16px; font-family:var(--header-font), sans-serif; white-space:nowrap;}
+.sidebar {overflow:auto; margin:0 var(--gutter); font-size:16px; font-family:var(--header-font), sans-serif; white-space:nowrap; padding:10px 2px;}
 .sidebar::-webkit-scrollbar {display:none;}
 .sidebar ul {list-style:none; margin:0; display:flex; gap:5px;}
 .sidebar li.spacer {flex:1;}
 .sidebar ul li a {display:flex; align-items:center; gap:5px; color:var(--color); padding:5px 15px; border-radius:20px;}
-.sidebar ul li a i {font-size:16px; flex-shrink:0;}
+.sidebar ul li a i {font-size:18px; flex-shrink:0;}
 .sidebar ul li a:hover {background:#202;}
 .sidebar ul li a.active {background:#ff0; color:#000;}
-
-.sidebar .troubleshooting {background:#fff; color:#000;}
 
 .guide {padding:var(--gutter);}
 
@@ -387,8 +385,7 @@ a.tag-image:hover {text-decoration:none;}
 
 .bom-link {text-decoration:none !important; color:#fff !important;}
 .bom-name {font-family:var(--header-font), sans-serif; white-space:nowrap; text-overflow:ellipsis; overflow:hidden; padding-top:2px;}
-.bom-top {background:#000; position:relative; padding:8px; box-shadow:0 1px 1px rgba(0, 0, 0, .6); border:2px solid transparent; border-radius:10px;}
-a.bom-top:hover {border:2px solid #ff0;}
+.bom-top {background:#000; position:relative; padding:8px; border-radius:10px;}
 .bom-image {height:100px; width:100px; margin:0 auto; display:block; object-fit:contain;}
 .bom-badges {display:flex; gap:5px;}
 .bom-item .bom-badges {position:absolute; bottom:10px; right:10px;}

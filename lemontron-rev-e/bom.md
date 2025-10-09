@@ -2,6 +2,7 @@
 layout: documentation
 title: BOM
 icon: shopping_cart
+order: 2
 ---
 
 This comprehensive list includes all the parts required to assemble a Lemontron Rev E 3D printer. Parts that need
