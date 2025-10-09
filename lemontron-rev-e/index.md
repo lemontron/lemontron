@@ -24,9 +24,7 @@ are tight and print quality must be high.
 
 ### Screw Drivers
 
-The Lemontron benefits from deep integration and thus only M3 (2mm Hex Bit) and a few M2.5 are used. I
-recommend having a dedicated high quality M3 screwdriver, plus a bit for your drill. Add a countersink bit to clean up
-the printed countersinks and to add countersinks to the probe.
+As for screws, only M3 (2mm Hex Bit) and a few M2.5 are used. I recommend having a dedicated high quality 2mm hex screwdriver, plus a bit for your drill.
 
 <div class="bom-list">
 {% include tool-item.html
@@ -59,7 +57,6 @@ image="/assets/tools/countersink.png" %}
 
 You will need a modern, enclosed 3D printer to print the Lemontron parts. Razors for scraping. A craft knife for tidying
 blemishes. Supa glue for the Lemonstruder parts (the "liquid" one not the thick one).
-pesky wires.
 
 <div class="bom-list">
 {% include tool-item.html
@@ -79,7 +76,6 @@ image="/assets/tools/super-glue.png" %}
 
     <div class="bom-placeholder"></div>
     <div class="bom-placeholder"></div>
-
 </div>
 
 ### Electrical Tools

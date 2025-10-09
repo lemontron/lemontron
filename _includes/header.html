@@ -5,24 +5,34 @@
         <a class="site-title" rel="author" href="{{'/' | relative_url}}">
             <img src="/assets/lemontron.svg" alt="Lemontron" height="40" width="157"/>
         </a>
+        {% if page.layout == 'post' or page.layout == 'default' %}
         <nav class="site-nav">
-            {% if printer %}
-            <div class="segmented">
-                {% for printer in site.data.printers %}
-
-                {%- assign swapped = page.url | replace: slug, printer[0] -%}
-                {%- assign exists = site.pages | where: "url", swapped | first -%}
-
-                {%- unless exists -%}
-                {%- assign swapped = "/" | append: printer[0] -%}
-                {%- endunless -%}
-
-                <a href="{{swapped}}" class="{%if slug == printer[0]%}active{%endif%}">{{printer[1].name}}</a>
-                {% endfor %}
-            </div>
-            {% else %}
+            <a class="page-link" href="/news/">News</a>
+            <a class="page-link" href="/about/">About</a>
+            <a class="page-link" href="{{site.discord_link}}" target="_blank">
+                <img src="/assets/icons/discord.svg" height="16" width="16" alt="Discord">
+                Discord
+            </a>
             {% include button.liquid title="Build yours" link="/lemontron-rev-a/" %}
-            {% endif %}
         </nav>
+        {% else %}
+        {% if printer %}
+        <div class="segmented">
+            {% for printer in site.data.printers %}
+
+            {%- assign swapped = page.url | replace: slug, printer[0] -%}
+            {%- assign exists = site.pages | where: "url", swapped | first -%}
+
+            {%- unless exists -%}
+            {%- assign swapped = "/" | append: printer[0] -%}
+            {%- endunless -%}
+
+            <a href="{{swapped}}" class="{%if slug == printer[0]%}active{%endif%}">{{printer[1].name}}</a>
+            {% endfor %}
+        </div>
+        {% else %}
+        {% include button.liquid title="Build yours" link="/lemontron-rev-a/" %}
+        {% endif %}
+        {%- endif -%}
     </div>
 </header>
