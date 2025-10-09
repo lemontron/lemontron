@@ -2,7 +2,7 @@
 
 <a class="bom-item" href="{{link}}" target="_blank">
     <div class="bom-top frame">
-        <img class="bom-image" src="{{include.image}}" alt="{{include.title}}"/>
+        <img class="bom-image" src="{{include.image}}?v={{site.time | date: '%s'}}" alt="{{include.title}}"/>
     </div>
     <div class="bom-body">
         <div class="bom-link">
