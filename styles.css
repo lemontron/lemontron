@@ -387,7 +387,8 @@ a.tag-image:hover {text-decoration:none;}
 
 .bom-link {text-decoration:none !important; color:#fff !important;}
 .bom-name {font-family:var(--header-font), sans-serif; white-space:nowrap; text-overflow:ellipsis; overflow:hidden; padding-top:2px;}
-.bom-top {background:#000; position:relative; padding:10px; box-shadow:0 1px 1px rgba(0, 0, 0, .6);}
+.bom-top {background:#000; position:relative; padding:8px; box-shadow:0 1px 1px rgba(0, 0, 0, .6); border:2px solid transparent; border-radius:10px;}
+a.bom-top:hover {border:2px solid #ff0;}
 .bom-image {height:100px; width:100px; margin:0 auto; display:block; object-fit:contain;}
 .bom-badges {display:flex; gap:5px;}
 .bom-item .bom-badges {position:absolute; bottom:10px; right:10px;}
@@ -446,8 +447,8 @@ a.tag-image:hover {text-decoration:none;}
 .segmented a.active {color:#000; background:#ff0;}
 
 /* PRINTING TIP */
-.printing-tips {display:grid; grid-template-columns: repeat(auto-fit, minmax(320px, 2fr)); gap:var(--gap); margin-bottom: 40px; }
-.printing-tip {display:flex; gap:20px; align-items:center; background:#101; padding-right:10px;}
+.printing-tips {display:grid; grid-template-columns: repeat(auto-fit, minmax(320px, 2fr)); gap:var(--gap); margin-bottom:40px;}
+.printing-tip {display:flex; gap:20px; align-items:center; background:#101; padding:5px 10px;}
 .printing-tip-description {font-family:var(--header-font), sans-serif;}
 .printing-tip-subtitle {opacity:0.5; font-size:11px;}
 .printing-tip img {height:100px; width:100px;}

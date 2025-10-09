@@ -7,7 +7,7 @@
     {%- assign calculated_price = item.price | multiply: bom.qty -%}
 
     <div class="bom-item">
-        <a href="{{bom.url | relative_url}}" class="bom-top frame">
+        <a href="{{bom.url | relative_url}}" class="bom-top">
             <img class="bom-image" src="/assets/bom/{{slug}}.png"/>
             {%- if include.hide_price == nil -%}
             <div class="bom-badges">
