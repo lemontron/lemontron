@@ -442,7 +442,6 @@ a.tag-image:hover {text-decoration:none;}
 
 /* PRINTING TIP */
 .printing-tips {display:grid; grid-template-columns: repeat(auto-fit, minmax(320px, 2fr)); gap:var(--gap); margin-bottom:40px;}
-/*.printing-tip {display:flex; gap:20px; align-items:center; background:#101; padding:5px 10px;}*/
 .printing-tip-description {font-family:var(--header-font), sans-serif;}
 .printing-tip-subtitle {opacity:0.5; font-size:11px;}
 .printing-tip img {height:100px; width:100px;}

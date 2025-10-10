@@ -6,25 +6,28 @@ banner: /assets/content/rev-e-beta.jpg
 order: 0
 ---
 
-Rev E builds on the previous Lemontrons with the Endgame Lemonstruder, the final design with a 4.5:1 gear reduction +
-100% PTFE filament path, a relocated tensioner unlocking extra rigidity, quad fans that are also bigger, a wraparound
-tool head, and _hundreds_ of other tiny tweaks improving fitment, further shaving the BOM, and increased
-rigidity throughout.
-
 {% include tip.html
-title = "Rev E is in private beta! The Rev E build guide does not exist!"
-tip = "Please familiarize yourself with Rev A, then join the Discord to apply to be a beta tester." %}
+title = "What you see here is a work in progress!"
+tip = "All this content is basically just hype for Rev E, not a complete documentation. The build guide doesn't even
+exist!" %}
 
-## Difficulty
+Rev E builds on the previous Lemontrons with the Endgame Lemonstruder, the final complete extrusion system with a 4.5:
+1 gear reduction + 100% PTFE filament path, a relocated tensioner unlocking extra rigidity, quad fans that are also
+bigger, a wraparound tool head, and _hundreds_ of other tiny tweaks improving fitment, further shaving the BOM, and
+increased rigidity throughout.
 
-The printing skill level either requires a recent enclosed printer or incredible skill by the operator! These tolerances
-are tight and print quality must be high.
+## Printing difficulty: Level 10
+
+This bad boy requires a recent enclosed printer or tuning that's considered perfection-seeking! These
+tolerances are tight and print quality _must_ be off-the-charts high. As for the actual assembly, the difficulty is much
+more forgiving-- the tools are common and the build process is extremely rewarding.
 
 ## Required Tools
 
 ### Screw Drivers
 
-As for screws, only M3 (2mm Hex Bit) and a few M2.5 are used. I recommend having a dedicated high quality 2mm hex screwdriver, plus a bit for your drill.
+As for screws, only M3 (2mm Hex Bit) and a few M2.5 are used. I recommend having a dedicated high quality 2mm hex
+screwdriver, plus a bit for your drill.
 
 <div class="bom-list">
 {% include tool-item.html
@@ -76,6 +79,7 @@ image="/assets/tools/super-glue.png" %}
 
     <div class="bom-placeholder"></div>
     <div class="bom-placeholder"></div>
+
 </div>
 
 ### Electrical Tools
