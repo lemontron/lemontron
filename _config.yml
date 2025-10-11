@@ -10,7 +10,6 @@ download_link: https://www.printables.com/@Lemontron
 highlighter: none
 plugins:
   - jekyll-feed
-  - jekyll-last-modified-at
 permalink: /:categories/:title/
 collections:
   troubleshooting:

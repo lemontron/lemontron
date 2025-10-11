@@ -41,7 +41,7 @@
     <!-- [TROUBLESHOOTING] {{post.title}} -->
     <url>
         <loc>{{post.url | absolute_url}}</loc>
-        <lastmod>{{ post.last_modified_at | date_to_xmlschema }}</lastmod>
+        <lastmod>{{post.date | default: site.time | date_to_xmlschema}}</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.5</priority>
     </url>
