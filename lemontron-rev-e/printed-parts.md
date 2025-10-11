@@ -121,6 +121,19 @@ description="This has a captive nut, so make sure to add a pause! Layer adhesion
 choice."
 settings="5 walls, 50% grid, concentric top/bottom"
 preferred_material="PLA" %}
+
+{% include inventory-item.html
+title="Bed Holder Cups"
+id="bed-holder-cup"
+description="Holds up the bed! Print two of these."
+settings="5 walls, 50% grid"
+preferred_material="ABS" %}
+
+{% include inventory-item.html
+title="Spacer"
+id="spacer"
+description="Drop these into the Z axis to make the screws line up flush with the back side."
+preferred_material="PLA" %}
 </ul>
 
 ## Tool Head Inventory
