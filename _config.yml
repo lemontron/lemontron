@@ -7,6 +7,7 @@ youtube_username: lemontron
 bluesky_username: lemontron.com
 discord_link: https://discord.com/invite/gSjfn4rnrm
 download_link: https://www.printables.com/@Lemontron
+highlighter: none
 plugins:
   - jekyll-feed
 permalink: /:categories/:title/
