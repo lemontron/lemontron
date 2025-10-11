@@ -1,3 +1,4 @@
-source 'https://rubygems.org'
-gem 'github-pages', group: :jekyll_plugins
-gem 'jekyll-last-modified-at'
+source "https://rubygems.org"
+
+gem "jekyll", "~> 4.3"
+gem "jekyll-last-modified-at", "~> 1.3"
