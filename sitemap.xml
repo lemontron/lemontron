@@ -37,4 +37,13 @@
         <priority>0.5</priority>
     </url>
     {% endfor %}
+    {% for post in site.troubleshooting %}
+    <!-- [TROUBLESHOOTING] {{post.title}} -->
+    <url>
+        <loc>{{post.url | absolute_url}}</loc>
+        <lastmod>{{ post.last_modified_at | date_to_xmlschema }}</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    {% endfor %}
 </urlset>

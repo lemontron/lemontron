@@ -108,7 +108,7 @@ other_material="PETG" %}
 {% include inventory-item.html
 title="Bed Holder"
 id="bed-holder"
-description="This is best printed in CF-PETG and the spine can be printed in whatever you want, I recommend matching
+description="It's really hard to print, it likes to lift off the bed. Keep an eye on this one. The spine can be printed in whatever you want, I recommend matching
 the tool head materials."
 settings="8 walls, 50% grid"
 preferred_material="CF-PETG"
