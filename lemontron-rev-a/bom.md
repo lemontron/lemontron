@@ -62,9 +62,9 @@ There are only {{printer.screws | size}} types of screws used.
 The **NEW** badge is for current owners of a [JourneyMaker](/news/journeymaker) who wish to
 convert it to a
 Lemontron. The cost for the **NEW** parts is **${{total_new}}**, plus
-another [stepper motor](/lemontron-rev-a/bom/stepper).
+another [stepper motor](/lemontron-rev-a/bom/electronics/stepper/).
 If you're converting a JourneyMaker, you can re-use your entire tool head, so you don't need to buy
-the [positron one](/lemontron-rev-a/bom/hotend) but it's a big upgrade.
+the [positron one](/lemontron-rev-a/bom/positron/positron-hotend/) but it's a big upgrade.
 
 ## Total: **${{total_price}}**
 

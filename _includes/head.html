@@ -3,6 +3,12 @@
     <title>{{page.title | default: 'Home'}} | Lemontron</title>
     <meta name="description" content="{{page.description | default: site.description}}">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="dark">
+    <link rel="canonical" href="{{page.url | absolute_url}}">
+    <link rel="stylesheet" href="/styles.css?v={{site.time | date: '%s'}}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
 
     {%- if jekyll.environment == "production" -%}
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-RPV6DG694N"></script>
@@ -13,12 +19,6 @@
 		gtag('config', 'G-RPV6DG694N');
     </script>
     {% endif %}
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="/styles.css?v={{site.time | date: '%s'}}">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
 
     <!-- Open Graph ({{page.layout | capitalize}}) -->
     {% if page.layout == 'bom' -%}

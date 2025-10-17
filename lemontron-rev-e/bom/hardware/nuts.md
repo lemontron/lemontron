@@ -4,8 +4,8 @@ title: Nuts
 qty: 10
 ---
 
-1. In the two outermost holes of the X rail, nuts are inserted to secure the pullies with screws from behind
-2. In the Y rail, the last two holes have a nut inserted as well, so that it can be secured from the underside of the
-   chassis
-3. 1 is used in the spool holder
-4. 1 is used in the extruder
+1. 2 for the outermost holes of the X rail, secures the pullies
+2. 2 for the Y rail, insert a nut into the two holes that wind up under the z-block
+3. 1 for the spool holder
+4. 2 for the bed holder
+5. 1 for the z-axis belt tensioner
