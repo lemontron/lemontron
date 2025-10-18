@@ -4,10 +4,15 @@ new: true
 links:
   - vendor: Amazon
     url: https://www.amazon.com/dp/B087TBB8YV?&tag=lemontron-20
-    note: 4-pack
+    note: Winsinn, RGB, 4-pack
   - vendor: AliExpress
     url: https://www.aliexpress.com/item/3256803695651138.html
+    note: Winsinn, RGB, Black
+  - vendor: AliExpress
+    url: https://www.aliexpress.com/item/3256805170883430.html
+    note: Gdstime, Black
 dimensions:
   Height: 30mm
   Depth: 10mm
-  Airflow (CFM): 4
+  Airflow: 4 CFM
+  Voltage: 24 V
