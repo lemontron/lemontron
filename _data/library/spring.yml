@@ -2,12 +2,16 @@ title: 6x3x10
 price: 0.68
 new: true
 links:
-  - vendor: AliExpress
-    url: https://www.aliexpress.com/item/3256806731381312.html
+  - product: Colored
     note: 6x3x10, Yellow, 5pcs
-  - vendor: Amazon
-    url: https://www.amazon.com/dp/B0C33CBKFY?&tag=lemontron-20
+    links:
+      - vendor: AliExpress
+        url: https://www.aliexpress.com/item/3256806731381312.html
+  - product: Generic
     note: Stiffer, but works well
+    links:
+      - vendor: Amazon
+        url: https://www.amazon.com/dp/B0C33CBKFY?&tag=lemontron-20
 md: Boing!
 dimensions:
   Outer Diameter: 6mm

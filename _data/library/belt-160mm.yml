@@ -2,6 +2,8 @@ title: 2GT 160mm x 6mm
 price: 0.99
 new: true
 links:
-  - vendor: AliExpress
-    url: https://www.aliexpress.com/item/3256804498756709.html
+  - product: Generic
     note: 2GT-160mm-width 6mm
+    links:
+      - vendor: AliExpress
+        url: https://www.aliexpress.com/item/3256804498756709.html

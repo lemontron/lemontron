@@ -2,10 +2,12 @@ title: F623
 price: 5.75
 new: true
 links:
-  - vendor: AliExpress
-    url: https://www.aliexpress.com/item/2255801040808949.html
-  - vendor: Amazon
-    url: https://www.amazon.com/gp/product/B08ZS8SKMK/?tag=lemontron-20
+  - product: Generic
+    links:
+    - vendor: AliExpress
+      url: https://www.aliexpress.com/item/2255801040808949.html
+    - vendor: Amazon
+      url: https://www.amazon.com/gp/product/B08ZS8SKMK/?tag=lemontron-20
 dimensions:
   Inner Diameter: 3mm
   Outer Diameter: 10mm

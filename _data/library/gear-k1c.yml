@@ -2,7 +2,9 @@ title: Creality K1C
 price: 5.39
 new: true
 links:
-  - vendor: AliExpress
-    url: https://www.aliexpress.com/item/3256806811634533.html
+  - product: Creality
+    links:
+      - vendor: AliExpress
+        url: https://www.aliexpress.com/item/3256806811634533.html
 md: |-
   This Creality K1C filament drive gear hails from a much larger machine and is repurposed to drive the filament through the Lemonstruder with great strength.

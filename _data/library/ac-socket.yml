@@ -3,7 +3,9 @@ info: Also known as a "Figure 8" socket, it is commonly found in laptop power su
 price: 1.30
 new: true
 links:
-  - vendor: Amazon
-    url: https://www.amazon.com/dp/B09X74LHSV
-  - vendor: AliExpress
-    url: https://www.aliexpress.com/item/2251832621937815.html
+  - product: Generic
+    links:
+      - vendor: Amazon
+        url: https://www.amazon.com/dp/B09X74LHSV
+      - vendor: AliExpress
+        url: https://www.aliexpress.com/item/2251832621937815.html

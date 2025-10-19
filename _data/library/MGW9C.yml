@@ -2,9 +2,12 @@ title: MGW9C
 price: 21.00
 new: false
 links:
-  - vendor: AliExpress
-    url: https://www.aliexpress.com/item/2255801011964264.html
-    note: 250mm
+  - product: Generic
+    links:
+      - vendor: AliExpress
+        url: https://www.aliexpress.com/item/2255801011964264.html
+dimensions:
+  Length: 250mm
 md: |-
   Don't lose the balls!
   

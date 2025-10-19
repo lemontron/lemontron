@@ -2,10 +2,15 @@ title: JST XHP-2
 price: 0.05
 new: true
 links:
-  - vendor: Amazon
-    url: https://www.amazon.com/dp/B0BB9MLKCH?&tag=lemontron-20
-    note: Has all the Lemontron connectors in one pack
-  - vendor: Digikey
-    url: https://www.digikey.com/en/products/detail/jst-sales-america-inc/XHP-2/555485
-  - vendor: LCSC
-    url: https://www.lcsc.com/product-detail/Housings-Wire-To-Board-Wire-To-Wire_JST-XHP-2-Y_C398493.html
+  - product: Diitao 560PCS Kit
+    note: Has all required connectors in one pack
+    links:
+    - vendor: Amazon
+      url: https://www.amazon.com/dp/B0BB9MLKCH?&tag=lemontron-20
+  - product: JST Official
+    note: Official manufacturer of JST connectors, sold individually
+    links:
+      - vendor: Digikey
+        url: https://www.digikey.com/en/products/detail/jst-sales-america-inc/XHP-2/555485
+      - vendor: LCSC
+        url: https://www.lcsc.com/product-detail/Housings-Wire-To-Board-Wire-To-Wire_JST-XHP-2-Y_C398493.html

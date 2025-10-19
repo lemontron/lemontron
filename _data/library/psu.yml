@@ -2,12 +2,14 @@ title: LOP-300-24
 price: 42.85
 new: false
 links:
-  - vendor: Digikey
-    url: https://www.digikey.com/en/products/detail/mean-well-usa-inc/LOP-300-24/22040910
-  - vendor: AliExpress
-    url: https://www.aliexpress.com/item/3256807058463517.html
-  - vendor: Mouser
-    url: https://www.mouser.com/ProductDetail/MEAN-WELL/LOP-300-24?qs=Z%252BL2brAPG1J53tTb9OPXAA%3D%3D
+  - product: MeanWell
+    links:
+      - vendor: Digikey
+        url: https://www.digikey.com/en/products/detail/mean-well-usa-inc/LOP-300-24/22040910
+      - vendor: AliExpress
+        url: https://www.aliexpress.com/item/3256807058463517.html
+      - vendor: Mouser
+        url: https://www.mouser.com/ProductDetail/MEAN-WELL/LOP-300-24?qs=Z%252BL2brAPG1J53tTb9OPXAA%3D%3D
 md: |-
   The following substitute PSU's also work: LOP-300-27, LOP-200-24, LOP-200-24.
   LOP and EPP variants are dimensionally quite similar.

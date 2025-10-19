@@ -2,6 +2,7 @@ title: 28AWG
 price: 1.92
 new: false
 links:
-  - vendor: AliExpress
-    url: https://www.aliexpress.com/item/3256804688199892.html
-    note: 28AWG
+  - product: Generic
+    links:
+      - vendor: AliExpress
+        url: https://www.aliexpress.com/item/3256804688199892.html

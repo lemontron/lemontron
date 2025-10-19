@@ -2,7 +2,7 @@
     {% for bom in include.items %}
     {%- assign slug = bom.url | split: '/' | last -%}
     {%- assign item = site.data.library[slug] -%}
-    {%- assign link = item.links | first -%}
+    {%- assign link = item.links[0].links[0] -%}
 
     {%- assign calculated_price = item.price | multiply: bom.qty -%}
 

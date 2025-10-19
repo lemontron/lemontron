@@ -2,12 +2,14 @@ title: MGN9C
 price: 9.41
 new: false
 links:
-  - vendor: AliExpress
-    url: https://www.aliexpress.com/item/2255800077919268.html
-    note: Stainless Steel, 250mm
-  - vendor: Amazon
-    url: https://www.amazon.com/dp/B0BZGZ1RSS?tag=lemontron-20
-    note: Black Version, 250mm
+  - product: Generic Stainless Steel
+    links:
+      - vendor: AliExpress
+        url: https://www.aliexpress.com/item/2255800077919268.html
+  - product: Generic Black
+    links:
+      - vendor: Amazon
+        url: https://www.amazon.com/dp/B0BZGZ1RSS?tag=lemontron-20
 md: |-
   Don't lose the balls!
   

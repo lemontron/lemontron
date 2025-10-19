@@ -2,8 +2,10 @@ title: Bondtech
 price: 2.07
 new: true
 links:
-  - vendor: AliExpress
-    url: https://www.aliexpress.com/item/2251832783805221.html
+  - product: Generic
+    links:
+    - vendor: AliExpress
+      url: https://www.aliexpress.com/item/2251832783805221.html
 dimensions:
   Inner Diameter: 5mm
   Outer Diameter: 7mm

@@ -2,8 +2,10 @@ title: 7" x 7"
 price: 16.99
 new: true
 links:
-  - vendor: Captubes
-    url: https://www.captubes.com/shop/#!/FroggyPad-Print-Bed-Koozie/p/701256710
+  - product: Captubes
     note: 7" x 7"
+    links:
+      - vendor: Captubes
+        url: https://www.captubes.com/shop/#!/FroggyPad-Print-Bed-Koozie/p/701256710
 md: |-
   Insulation for the back of your heat bed. Bed will heat up faster, will reduce energy consumption, and protects the bed.

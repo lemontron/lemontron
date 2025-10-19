@@ -2,9 +2,13 @@ title: MGN12C
 price: 12.19
 new: false
 links:
-  - vendor: AliExpress
-    url: https://www.aliexpress.com/item/2255800077919268.html
+  - product: Generic
     note: 250mm
+    links:
+      - vendor: AliExpress
+        url: https://www.aliexpress.com/item/2255800077919268.html
+dimensions:
+  Length: 250mm
 md: |-
   Don't lose the balls!
   

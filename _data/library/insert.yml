@@ -3,8 +3,12 @@ price: 0.34
 description:
 new: true
 links:
-  - vendor: AliExpress
-    url: https://www.aliexpress.com/item/3256805590685220.html
+  - product: Generic
+    links:
+      - vendor: AliExpress
+        url: https://www.aliexpress.com/item/3256805590685220.html
+      - vendor: Amazon
+        url: https://www.amazon.com/dp/B0CTCSKVGY
 md: |-
   These brass inserts are extra long and go in straight.
 dimensions:

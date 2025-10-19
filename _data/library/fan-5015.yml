@@ -2,15 +2,18 @@ title: 5015
 price: 9.75
 new: false
 links:
-  - vendor: AliExpress
-    url: https://www.aliexpress.com/item/3256805950858087.html
-    note: Sunon
-  - vendor: KB3D
-    url: https://kb-3d.com/store/fans/501-sunon-5015-blower-fan-24v-maglev-1646515411413.html
-    note: Sunon
-  - vendor: West3D
-    url: https://west3d.com/products/berserker-vindr-ulta-performance-5015-blower-fan-24v-5015b-24v-a-50x15mm?variant=43936071090388
-    note: Berserker, highly recommended
+  - product: Sunon MagLev
+    note: Standard, solid option
+    links:
+      - vendor: AliExpress
+        url: https://www.aliexpress.com/item/3256805950858087.html
+      - vendor: KB3D
+        url: https://kb-3d.com/store/fans/501-sunon-5015-blower-fan-24v-maglev-1646515411413.html
+  - product: Beserker Vindr
+    note: Highly recommended
+    links:
+      - vendor: West3D
+        url: https://west3d.com/products/berserker-vindr-ulta-performance-5015-blower-fan-24v-5015b-24v-a-50x15mm?variant=43936071090388
 md: |-
   50mm wide and 15mm thick.
   

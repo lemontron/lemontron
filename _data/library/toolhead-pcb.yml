@@ -1,8 +1,10 @@
 price: 24.98
 new: false
 links:
-  - vendor: PCBWay
-    url: "https://www.pcbway.com/project/shareproject/Lemontron_Tool_End_Breakout_Board_f0f9f248.html"
+  - brand: Lemontron
+    links:
+      - vendor: PCBWay
+        url: https://www.pcbway.com/project/shareproject/Lemontron_Tool_End_Breakout_Board_f0f9f248.html
 md: |-
   This simple little breakout board enhances the fun of assembling the Lemontron Tool Head. This board sits on the
   aluminum heat sink and provides pads to solder each component to. You can always build a Lemontron Tool Head without it,

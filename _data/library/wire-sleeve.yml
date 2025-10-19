@@ -2,6 +2,7 @@ title: 4mm
 price: 1.89
 new: true
 links:
-- vendor: AliExpress
-  url: https://www.aliexpress.com/item/3256804114652291.html
-  note: 4mm
+  - product: Generic
+    links:
+      - vendor: AliExpress
+        url: https://www.aliexpress.com/item/3256804114652291.html

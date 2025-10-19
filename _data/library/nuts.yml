@@ -2,8 +2,10 @@ title: M3
 price: 0.10
 new: false
 links:
-  - vendor: AliExpress
-    url: https://www.aliexpress.com/item/3256801453044560.html
-  - vendor: LCSC
-    url: https://www.lcsc.com/product-detail/Nut_AOFENG-DIN934-M3-0-5-316-A4-50_C5210233.html
+  - product: Generic
+    links:
+      - vendor: AliExpress
+        url: https://www.aliexpress.com/item/3256801453044560.html
+      - vendor: LCSC
+        url: https://www.lcsc.com/product-detail/Nut_AOFENG-DIN934-M3-0-5-316-A4-50_C5210233.html
 md: Nothing special just a common nut!!!

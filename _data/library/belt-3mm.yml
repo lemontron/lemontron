@@ -2,13 +2,17 @@ title: 2GT 3mm
 price: 3.49
 new: false
 links:
-  - vendor: KB3D
-    url: https://kb-3d.com/store/positron/1558-ldo-2gt-belt-3mm-175-meters-for-positron-v32-3d-printer-1725634929631.html
+  - product: Gates PowerGrip
+    links:
+      - vendor: KB3D
+        url: https://kb-3d.com/store/positron/1558-ldo-2gt-belt-3mm-175-meters-for-positron-v32-3d-printer-1725634929631.html
+  - product: DIY Option
+    note: Make your own 3mm belts from 6mm belts
+    links:
+      - vendor: Printables
+        url: https://www.printables.com/model/1267875-3mm-belt-splitter
 md: |-
   2GT refers to the type of tooth profile on the belt. The 3mm width is uncommon.
 
   ## Technical Drawing
   ![Belt Diagram](/assets/content/belt-diagram.png)
-  
-  ## DIY Option
-  You can make your own belts too, just buy 6mm Gates belts and use my [splitter tool](https://www.printables.com/model/1267875-3mm-belt-splitter).

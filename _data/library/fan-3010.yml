@@ -2,15 +2,16 @@ title: 3010
 price: 2.25
 new: true
 links:
-  - vendor: Amazon
-    url: https://www.amazon.com/dp/B087TBB8YV?&tag=lemontron-20
-    note: Winsinn, RGB, 4-pack
-  - vendor: AliExpress
-    url: https://www.aliexpress.com/item/3256803695651138.html
-    note: Winsinn, RGB, Black
-  - vendor: AliExpress
-    url: https://www.aliexpress.com/item/3256805170883430.html
-    note: Gdstime, Black
+  - product: Winsinn RGB
+    links:
+      - vendor: Amazon
+        url: https://www.amazon.com/dp/B087TBB8YV?&tag=lemontron-20
+      - vendor: AliExpress
+        url: https://www.aliexpress.com/item/3256803695651138.html
+  - product: Gdstime Black
+    links:
+      - vendor: AliExpress
+        url: https://www.aliexpress.com/item/3256805170883430.html
 dimensions:
   Height: 30mm
   Depth: 10mm

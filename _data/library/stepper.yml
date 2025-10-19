@@ -2,12 +2,15 @@ title: NEMA17 20mm
 price: 7.72
 new: false
 links:
-  - vendor: AliExpress
-    url: https://www.aliexpress.com/item/3256805340023072.html
-    note: 17HS08-1004S - Hanpose brand. Cheapest option, found in the JourneyMaker, and you get an extra!
-  - vendor: Amazon
-    url: https://www.amazon.com/dp/B091YDBK1S?&tag=lemontron-20
-    note: Different model, works for me
+  - product: Hanpose
+    note: Cheapest option, found in the JourneyMaker, and you get an extra!
+    links:
+      - vendor: AliExpress
+        url: https://www.aliexpress.com/item/3256805340023072.html
+  - product: StepperOnline
+    links:
+      - vendor: Amazon
+        url: https://www.amazon.com/dp/B091YDBK1S?&tag=lemontron-20
 dimensions:
   Faceplate Width: 1.7"
   Body Length: 20mm

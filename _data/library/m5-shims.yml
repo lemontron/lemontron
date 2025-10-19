@@ -3,6 +3,7 @@ qty: 2
 price: 0.50
 new: true
 links:
-  - vendor: AliExpress
-    url: https://www.aliexpress.com/item/3256801859874107.html
-    note: M5x8xThick, 0.2mm thick
+  - product: Generic
+    links:
+      - vendor: AliExpress
+        url: https://www.aliexpress.com/item/3256801859874107.html

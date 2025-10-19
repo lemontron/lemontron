@@ -2,8 +2,10 @@ title: MR115
 price: 0.99
 new: false
 links:
-  - vendor: AliExpress
-    url: https://www.aliexpress.com/item/3256806950683603.html
+  - product: Generic
+    links:
+      - vendor: AliExpress
+        url: https://www.aliexpress.com/item/3256806950683603.html
 dimensions:
   Inner Diameter: 5mm
   Outer Diameter: 11mm

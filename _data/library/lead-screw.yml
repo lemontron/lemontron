@@ -2,8 +2,10 @@ title: 5mm
 price: 8.33
 new: false
 links:
-  - vendor: AliExpress
-    url: https://www.aliexpress.com/item/3256804397445121.html
+  - product: Generic
+    links:
+      - vendor: AliExpress
+        url: https://www.aliexpress.com/item/3256804397445121.html
 md: Includes the nut.
 dimensions:
   Pitch: 1mm

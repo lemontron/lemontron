@@ -1,15 +1,18 @@
 price: 1.60
 new: false
 links:
-  - vendor: Amazon
-    url: https://www.amazon.com/dp/B07SBKMZDB?&tag=lemontron-20
-    note: Capricorn
-  - vendor: AliExpress
-    url: https://www.aliexpress.com/item/3256806655683811.html
-    note: Capricorn
-  - vendor: AliExpress
-    url: https://www.aliexpress.com/item/3256806056618135.html
-    note: Generic
+  - product: Capricorn
+    note: Higher quality
+    links:
+      - vendor: Amazon
+        url: https://www.amazon.com/dp/B07SBKMZDB?&tag=lemontron-20
+      - vendor: AliExpress
+        url: https://www.aliexpress.com/item/3256806655683811.html
+  - product: Generic
+    note: ID can vary
+    links:
+      - vendor: AliExpress
+        url: https://www.aliexpress.com/item/3256806056618135.html
 md: Capricorn tubes has a smaller inner diameter which means less snags and higher print accuracy.
 dimensions:
   Outer Diameter: 4mm
