@@ -1,0 +1,15 @@
+title: Copper, 14mm
+price: 1.30
+new: true
+dimensions:
+  Length: 14mm
+  Width: 14mm
+  Height: 5mm
+links:
+  - product: Generic
+    links:
+      - vendor: Amazon
+        url: https://www.amazon.com/dp/B07H16Z528
+      - vendor: AliExpress
+        url: https://www.aliexpress.com/item/3256809990080777.html
+md: Includes adhesive. Commonly used on VRAM, GPU, Raspberry Pi, etc.

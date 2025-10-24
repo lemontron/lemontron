@@ -17,14 +17,16 @@
         <div class="segmented">
             {% for printer in site.data.printers %}
 
+            {%- assign printer_link = "/" | append: printer[0] | append: "/" -%}
+            {%- unless slug == printer[0] %}
             {%- assign swapped = page.url | replace: slug, printer[0] -%}
             {%- assign exists = site.pages | where: "url", swapped | first -%}
-
-            {%- unless exists -%}
-            {%- assign swapped = "/" | append: printer[0] -%}
+            {%- if exists -%}
+            {%- assign printer_link = page.url | replace: slug, printer[0] -%}
+            {%- endif -%}
             {%- endunless -%}
 
-            <a href="{{swapped}}" class="{%if slug == printer[0]%}active{%endif%}">{{printer[1].name}}</a>
+            <a href="{{printer_link}}" class="{%if slug == printer[0]%}active{%endif%}">{{printer[1].name}}</a>
             {% endfor %}
         </div>
         {% else %}
