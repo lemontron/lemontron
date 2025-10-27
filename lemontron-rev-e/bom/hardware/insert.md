@@ -1,12 +1,18 @@
 ---
 layout: bom
 title: Brass Inserts
-qty: 16
+qty: 24
+uses:
+  - location: Left Top Plate
+    qty: 1
+    note: The filament guide tail screws into it
+  - location: Unibody Z-Block
+    note: Secures the Z-Axis to the unibody base
+    qty: 2
+  - location: Unibody Underside
+    qty: 12
+    note: Secures the Y-rail and idler pullies
+  - location: Unibody Top Side
+    qty: 10
+    note: Secures the top plates
 ---
-
-1. 2 hold on the top plates
-2. 2 hold on the idler pulley
-3. 2 hold on the z axis
-4. 1 holds the XY belt tensioner
-5. 8 hold on the Y axis linear rail
-6. 1 in the top plate for the filament guide

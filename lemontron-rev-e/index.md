@@ -7,13 +7,12 @@ order: 0
 ---
 
 {% include tip.html
-title = "What you see here is a work in progress!"
-tip = "All this content is basically just hype for Rev E, not a complete documentation. The build guide doesn't even
-exist!" %}
+title = "Rev E Beta is available to download and make!"
+tip = "However, the build guide doesn't exist! To build Rev E Beta, you have to refer to the Rev A build guide and use
+your imagination. Join the Discord to get help. Rev E will change before the official release." %}
 
 Rev E builds on the previous Lemontrons with the Endgame Lemonstruder, the final complete extrusion system with a 4.5:
-1 gear reduction + 100% PTFE filament path, a relocated tensioner unlocking extra rigidity, quad fans that are also
-bigger, a wraparound tool head, and _hundreds_ of other tiny tweaks improving fitment, further shaving the BOM, and
+1 gear reduction + 100% PTFE filament path, a relocated tensioner unlocking extra rigidity, new quad fans for 8x cooling over Rev A, a wraparound tool head, and _hundreds_ of other tiny tweaks improving fitment, further shaving the BOM, and
 increased rigidity throughout.
 
 ## Printing difficulty: Level 10

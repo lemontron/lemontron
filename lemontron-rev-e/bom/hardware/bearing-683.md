@@ -2,8 +2,11 @@
 layout: bom
 title: Small Bearings
 qty: 3
+uses:
+  - location: Lemonstruder
+    qty: 1
+    note: Exerts pressure on the filament to help the extruder drive gear grip the filament
+  - location: XY Spacer
+    qty: 2
+    note: Guides the lower section of belt on the belt tower
 ---
-
-1. A single bearing is used in the Lemonstruder. It exerts pressure on the filament to help the extruder drive gear
-to sufficiently grip the filament.
-2. Two are used in the bearing tower to guide the lower belt path.

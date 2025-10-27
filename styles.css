@@ -334,12 +334,13 @@ a.tag-image:hover {text-decoration:none;}
 
 .bom-page-top {display:flex; flex-direction:column; align-items:center; text-align:center;}
 .bom-page-top .bom-badges {margin-top:10px;}
-.bom-page-article {display:flex; flex-direction:column; gap:20px;}
+.bom-page-article {}
 
-.dimensions-table {border:2px solid #ff3; background:#ff3; border-radius:10px; font-size:12px; overflow:hidden;}
+.dimensions-table {border:2px solid #ff3; background:#ff3; border-radius:10px; font-size:12px; overflow:hidden; margin-bottom:20px;}
 .dimensions-table table {margin:0;}
 .dimensions-table td {padding:2px 10px; background:#000;}
 .dimensions-table th {background:#ff3; color:#000; padding:2px 10px;}
+.dimensions-table p {margin:0;}
 
 /* CARD */
 .card {display:block; margin-bottom:20px; color:#fff !important; text-align:left;}
@@ -383,3 +384,4 @@ a.tag-image:hover {text-decoration:none;}
 
 /* TABLE */
 .numeric {text-align:right;}
+.small {width:1px;}

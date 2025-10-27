@@ -1,6 +1,12 @@
 title: 20T/5mm Bore
 price: 1.04
 new: false
+dimensions:
+  Height: 10mm
+  Inner Diameter / Bore: 5mm
+  Outer Diameter: 16mm
+  Teeth: 20
+  Belt Profile: 2GT
 links:
   - product: Generic
     links:

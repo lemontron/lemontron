@@ -2,7 +2,9 @@
 layout: bom
 title: Drive Pulleys
 qty: 4
+uses:
+  - location: A Motor
+  - location: B Motor
+  - location: Z Motor
+  - location: Z Lead Screw
 ---
-
-1. 3 used for the left, right, and z-axis motors
-2. 1 used on the z-axis shaft

@@ -51,6 +51,28 @@ layout: default
             </table>
         </div>
         {% endif %}
+
+        {% if page.uses %}
+        <h2>Locations in {{printer.name}}</h2>
+        <div class="dimensions-table">
+            <table>
+                <tr>
+                    <th class="small">Qty</th>
+                    <th>Location</th>
+                </tr>
+                {% for use in page.uses %}
+                <tr>
+                    <td class="small">{{use.qty | default: 1}}x</td>
+                    <td>
+                        {{use.location}}
+                        <div class="meta">{{use.note | markdownify}}</div>
+                    </td>
+                </tr>
+                {% endfor %}
+            </table>
+        </div>
+        {% endif %}
+
         <!--    <p class="post-meta">-->
         <!--        <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">-->
         <!--            {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}-->
