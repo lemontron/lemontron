@@ -2,7 +2,7 @@
 layout: bom
 title: Spring
 qty: 2
+uses:
+  - location: Lemonstruder
+  - location: Bed Holder
 ---
-
-1. Used in the extruder
-2. Used in the bed holder

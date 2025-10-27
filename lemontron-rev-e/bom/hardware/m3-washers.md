@@ -2,11 +2,14 @@
 layout: bom
 title: Big Washers
 qty: 10
+uses:
+  - location: Bed Holder
+    qty: 4
+  - location: XY Spacer
+    qty: 2
+  - location: Belt Tensioner
+    qty: 2
+  - location: Idler Pullies
+    qty: 2
+    note: On the midplate
 ---
-
-| Location                                                           | Quantity |
-|--------------------------------------------------------------------|----------|
-| [Bed Holder](/lemontron-rev-a/build-guide/bed---holder.jpg)                       | 4        |
-| [Lower Pulleys](/lemontron-rev-a/build-guide/midplate---right---lower-pulley.jpg) | 2        |
-| [Belt Tensioner](/lemontron-rev-a/build-guide/rail---tensioner---posts.jpg)       | 2        |
-| [Bearing Towers](/lemontron-rev-a/build-guide/rail---bearing-towers.jpg)          | 2        |
