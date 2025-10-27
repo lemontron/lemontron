@@ -161,3 +161,11 @@ description="No material requirements. Perhaps use ABS to match."
 settings="5 walls, 50% grid"
 preferred_material="ABS" %}
 </ul>
+
+<div class="paragraph btn-wrapper">
+   {% include button.liquid 
+   title="Download Lemontron on Printables"
+   link="https://www.printables.com/model/1440115-lemontron-endgame-portable-3d-printer"
+   icon="cloud_download"
+   target="_blank" %}
+</div>
