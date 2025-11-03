@@ -958,5 +958,5 @@ title = "Sike you've not reached the end!"
 image = "calibration---adjust-screw.jpg"
 content = "Use the handy guide to do your one-time calibration."
 buttonTitle="Guide &rarr; How to Calibrate"
-buttonLink="/how-to-calibrate" %}
+buttonLink="/guide/how-to-calibrate" %}
 </ol>
