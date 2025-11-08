@@ -7,6 +7,8 @@ links:
     links:
       - vendor: AliExpress
         url: https://www.aliexpress.com/item/3256802091872943.html
+      - vendor: Amazon
+        url: https://www.amazon.com/dp/B0FSKBSXXV?tag=lemontron-20
   - product: Generic
     note: 16T, 5mm ID - Potential alternative, untested
     links:
