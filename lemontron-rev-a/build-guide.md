@@ -292,7 +292,7 @@ screw = "M2.5x6/CSK" %}
 {% include step.html
 title = "Insert small fan"
 image = "tool---insert-small-fan.jpg"
-content = "Insert the small fan and push it under the ledge so that it's touching the head sink." %}
+content = "Insert the small fan and push it under the ledge so that it's touching the heat sink." %}
 
 {% include step.html
 title = "Drop in the part cooling fan"
