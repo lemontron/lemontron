@@ -259,7 +259,7 @@ title = "Tighten the heat break"
 image = "hotend.jpg"
 content = "The heat break is loose from the factory. You need to rebuild the hotend."
 buttonTitle="Guide &rarr; Rebuild the Hotend"
-buttonLink="/how-to-rebuild-positron-hotend"
+buttonLink="/guide/how-to-rebuild-positron-hotend/"
 %}
 
 {% include step.html
