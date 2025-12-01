@@ -5,11 +5,11 @@ links:
   - product: RGB
     links:
       - vendor: Amazon
-        url: https://www.amazon.com/dp/B087Q7BJ8Y?&tag=lemontron-20
+        url: https://www.amazon.com/dp/B087Q7BJ8Y?tag=lemontron-20
   - product: Black
     links:
       - vendor: Amazon
-        url: https://www.amazon.com/dp/B07KS419VT?&tag=lemontron-20
+        url: https://www.amazon.com/dp/B07KS419VT?tag=lemontron-20
       - vendor: AliExpress
         url: https://www.aliexpress.com/item/3256803697135608.html
 dimensions:

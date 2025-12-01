@@ -5,7 +5,7 @@ links:
   - product: Generic
     links:
       - vendor: Amazon
-        url: https://www.amazon.com/dp/B09X74LHSV
+        url: https://www.amazon.com/dp/B09X74LHSV?tag=lemontron-20
       - vendor: AliExpress
         url: https://www.aliexpress.com/item/2251832621937815.html
 md: Also known as a "Figure 8" socket, it is commonly found in laptop power supplies and Lemontrons.

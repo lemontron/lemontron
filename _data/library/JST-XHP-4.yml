@@ -6,7 +6,7 @@ links:
     note: Has all required connectors in one pack
     links:
       - vendor: Amazon
-        url: https://www.amazon.com/dp/B0BB9MLKCH?&tag=lemontron-20
+        url: https://www.amazon.com/dp/B0BB9MLKCH?tag=lemontron-20
   - product: JST Official
     note: Official manufacturer of JST connectors, sold individually
     links:

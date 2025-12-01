@@ -10,7 +10,7 @@ links:
   - product: StepperOnline
     links:
       - vendor: Amazon
-        url: https://www.amazon.com/dp/B091YDBK1S?&tag=lemontron-20
+        url: https://www.amazon.com/dp/B091YDBK1S?tag=lemontron-20
 dimensions:
   Faceplate Width: 1.7"
   Body Length: 20mm

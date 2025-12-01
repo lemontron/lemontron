@@ -9,7 +9,7 @@ links:
   - product: Generic
     links:
       - vendor: Amazon
-        url: https://www.amazon.com/dp/B07H16Z528
+        url: https://www.amazon.com/dp/B07H16Z528?tag=lemontron-20
       - vendor: AliExpress
         url: https://www.aliexpress.com/item/3256809990080777.html
 md: Includes adhesive. Commonly used on VRAM, GPU, Raspberry Pi, etc.
