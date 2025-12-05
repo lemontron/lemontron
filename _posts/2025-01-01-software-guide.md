@@ -16,7 +16,7 @@ Temporarily install `BOOT` and `USB Power` jumpers, connect it to your computer 
 {% include button.liquid
 title="Download Firmware"
 icon="download"
-href="/assets/downloads/klipper.uf2" %}
+link="/assets/downloads/klipper.uf2" %}
 
 Drag the firmware file to the PICO drive that appears. Remove the jumpers. Good to go!
 
@@ -50,7 +50,7 @@ In the menu interface that appears...
    your printer "lemontron" then your URL would be `http://lemontron.local`
 2. Update everything!
 3. Click on the "Machine" tab (the last one) and
-   upload [the config files](/assets/downloads/config-20241223-175652.zip).
+   upload [the config files](https://www.printables.com/model/1440115-lemontron-rev-e/files).
 
 ## Install AutoHotspot
 
