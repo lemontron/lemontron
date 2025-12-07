@@ -385,3 +385,12 @@ a.tag-image:hover {text-decoration:none;}
 /* TABLE */
 .numeric {text-align:right;}
 .small {width:1px;}
+
+/* CONFIGURATOR */
+#configurator {padding:10px; background:#101; display:flex; flex-direction:column; gap:10px; margin-bottom:20px;}
+#configurator fieldset {display:flex; flex-direction:column; border-radius:8px; border:1px solid rgba(255,255,255,.1); gap:5px;}
+#configurator legend {padding:0 5px; font-family:Righteous, sans-serif;}
+#configurator label {display:flex; justify-content:space-between; font-size:12px; align-items:center;}
+#configurator select {color:#fff; background:#000; border:none; border-radius:5px; font-family:"JetBrains Mono", monospace; padding:3px 5px; width:160px; font-size:12px;}
+#configurator button {border-radius:100px; background:#ff0; border:none; color:#000; padding:8px; cursor:pointer; font-family:Righteous, sans-serif;}
+.configurator-title {text-align:center; font-weight:bold; padding-bottom:10px; font-family:Righteous, sans-serif;}

@@ -1,0 +1,158 @@
+<script src="https://cdn.jsdelivr.net/npm/jszip@3.10.1/dist/jszip.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/mustache@4.2.0/mustache.min.js"></script>
+<script type="text/javascript">
+	const extruderDefs = {
+		'hummingbird': {
+			'extruder': 'Hummingbird',
+			'dir_pin': 'gpio13',
+			'rotation_distance': '53.494165',
+			'gear_ratio': '44:10, 37:17',
+		},
+		'lemonstruder1': {
+			'extruder': 'Lemonstruder 1',
+			'dir_pin': '!gpio13',
+			'rotation_distance': '22.5',
+			'gear_ratio': '1:1',
+		},
+		'lemonstruder16': {
+			'extruder': 'Endgame Lemonstruder 16T',
+			'dir_pin': '!gpio13',
+			'rotation_distance': '42.612471',
+			'gear_ratio': '72:16',
+		},
+		'lemonstruder17': {
+			'extruder': 'Endgame Lemonstruder 17T',
+			'dir_pin': '!gpio13',
+			'rotation_distance': '42.612471',
+			'gear_ratio': '72:17',
+		},
+	};
+
+	const getContext = (form) => {
+		const data = new FormData(form);
+		const res = data.keys().toArray().reduce((acc, key) => {
+			acc[key] = data.get(key);
+			return acc;
+		}, {});
+		const [max_x, max_y, max_z] = res.volume.split('x');
+		return {...res, ...extruderDefs[res.extruder], max_x, max_y, max_z};
+	};
+
+	const generateConfig = (form) => {
+		if (!form.checkValidity()) return form.reportValidity();
+
+		console.log('Generate configuration...');
+		const context = getContext(form);
+		console.log(context);
+
+		const zip = new JSZip();
+		const container = document.getElementById('config-source');
+		container.querySelectorAll('textarea').forEach(textarea => {
+			const filename = textarea.getAttribute('data-filename');
+			const template = textarea.value || textarea.textContent;
+			const rendered = Mustache.render(template, context);
+
+			console.log(filename, rendered);
+			zip.file(filename, rendered);
+		});
+		downloadZip(zip);
+	};
+
+	const downloadZip = async (zip) => {
+		const blob = await zip.generateAsync({type: 'blob'});
+		const url = URL.createObjectURL(blob);
+		const a = document.createElement('a');
+		a.href = url;
+		a.download = 'lemontron-config.zip';
+		document.body.appendChild(a);
+		a.click();
+		document.body.removeChild(a);
+		URL.revokeObjectURL(url);
+	};
+
+	document.addEventListener('DOMContentLoaded', () => {
+		const form = document.getElementById('configurator');
+		form.addEventListener('submit', (e) => {
+			e.preventDefault();
+			generateConfig(form);
+		});
+	});
+</script>
+
+<div id="config-source" style="display:none">
+    <textarea data-filename="printer.cfg">{% include configurator/printer.cfg %}</textarea>
+    <textarea data-filename="positron_macros.cfg">{% include configurator/positron_macros.cfg %}</textarea>
+</div>
+
+<form id="configurator" class="frame">
+    <div class="configurator-title">Configuration Generator (BETA)</div>
+    <fieldset>
+        <legend>Extruder</legend>
+        <label>
+            <span>Type</span>
+            <select name="extruder" required>
+                <option value="lemonstruder16" title="Endgame design with 16T gear" selected>Endgame Lemonstruder
+                </option>
+                <option value="lemonstruder17" title="Endgame design with 17T gear mod">Endgame Lemonstruder 17T
+                </option>
+                <option value="lemonstruder1" title="Original design from Rev A-D">Lemonstruder</option>
+                <option value="hummingbird" title="Externally mounted extruder used for testing purposes">Hummingbird
+                </option>
+            </select>
+        </label>
+        <label>
+            <span>Power</span>
+            <select name="extruder_current" required>
+                <option value="0.6" selected title="Sets extruder motor current to 0.6">Balanced</option>
+                <option value="0.8" title="Sets extruder motor current to 0.8">Performance</option>
+                <option value="1.0" title="Sets extruder motor current to 1.0">Turbo</option>
+            </select>
+        </label>
+    </fieldset>
+    <fieldset>
+        <legend>Cooling</legend>
+        <label>
+            <span>Part Cooling</span>
+            <select name="pcf_max_power" required>
+                <option value="1.0" title="Sets max fan power to 100%" selected>Full Power</option>
+                <option value="0.8" title="Sets max fan power to 80%">Quieter</option>
+            </select>
+        </label>
+    </fieldset>
+    <fieldset>
+        <legend>Motion System</legend>
+        <label>
+            <span>Probe Count</span>
+            <select name="probe_count" required>
+                <option value="2,2" title="For glass heat beds">2x2</option>
+                <option value="3,3" title="For PCB heat beds" selected>3x3</option>
+                <option value="4,4" title="For PCB heat beds">4x4</option>
+            </select>
+        </label>
+        <label>
+            <span>Build Volume</span>
+            <select name="volume" required>
+                <option value="180x180x165" title="Build volume of Rev A-D">180x180x165</option>
+                <option value="180x177x161" title="Build volume of the Rev E release" selected>180x177x161</option>
+                <option value="180x180x161" title="Build volume of future Rev F release" disabled>180x180x161</option>
+            </select>
+        </label>
+        <label>
+            <span>Homing Sensitivity</span>
+            <select name="driver_SGTHRS" required>
+                <option value="60" title="Optimized value for properly built Lemontron" selected>Standard</option>
+                <option value="70" title="Testing value, for problematic drivetrains">Extra Stiff</option>
+            </select>
+        </label>
+        <label>
+            <span>Power</span>
+            <select name="xy_current" required>
+                <option value="0.6" title="Sets motor run current to 0.6" selected>Balanced</option>
+                <option value="0.8" title="Sets motor run current to 0.8">Performance</option>
+                <option value="1.0" title="Sets motor run current to 1.0">Turbo</option>
+            </select>
+        </label>
+    </fieldset>
+    <div class="meta"><b>Defaults are optimized for Rev E.</b> This tool is brand new, send feedback in Discord!</div>
+    <button type="submit">Download Config</button>
+</form>

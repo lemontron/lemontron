@@ -5,7 +5,7 @@ thumbnail: /lemontron-rev-a/build-guide/intro---sd-card.jpg
 categories: [guide]
 ---
 
-Lemontron's official config: Mainsail OS on a Raspberry Pi
+Lemontron's official config: Mainsail OS on a Raspberry Pi.
 
 ## Prepare the SKR Pico
 
@@ -22,7 +22,7 @@ Drag the firmware file to the PICO drive that appears. Remove the jumpers. Good 
 
 {% include separator.html %}
 
-## Prepare the Raspberry Pi
+## Install OS on Raspberry Pi
 
 Burn Mainsail OS (64 bit) via [Raspberry Pi Imager](https://www.raspberrypi.com/software/) onto your SD Card, ensuring
 you've added your SSH key and WiFi settings. No need to set a user/password.
@@ -44,13 +44,17 @@ In the menu interface that appears...
 3. Save Config
 4. Run `make` in the terminal
 
-## Configure Mainsail OS
+{% include separator.html %}
+
+## Configure Klipper
+
+{% include configurator.liquid %}
 
 1. Open up the Raspberry Pi webpage by navigating to the network name of the Raspberry Pi in your browser. If you named
    your printer "lemontron" then your URL would be `http://lemontron.local`
 2. Update everything!
 3. Click on the "Machine" tab (the last one) and
-   upload [the config files](https://www.printables.com/model/1440115-lemontron-rev-e/files).
+   upload the config files.
 
 ## Install AutoHotspot
 

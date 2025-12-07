@@ -69,7 +69,7 @@ title="Gantry Block"
 id="gantry-block"
 description="This links the X and Y rails together to create the XY plane. A stiff material, resistant to warping and
 drift, is ideal."
-settings="5 walls, 50% grid"
+settings="5 walls, 50% grid, 2mm bottom shell"
 preferred_material="ABS" %}
 
 {% include inventory-item.html

@@ -11,5 +11,7 @@ highlighter: none
 permalink: /:categories/:title/
 collections:
   troubleshooting:
-      output: true
-      permalink: /troubleshooting/:title/
+    output: true
+    permalink: /troubleshooting/:title/
+exclude:
+  - "configurator/*.raw"
