@@ -169,7 +169,7 @@ for your tiny benis and clamp it so hard that you'll wish I would use the iron i
 {% include step.html
 title = "Crimp signal wires"
 image = "z-axis---edge-connector---crimp-signal-wires.jpg"
-content = "Crimp the two signal wires. Learn how to crimp goooood <a href='/lemontron/how-to-crimp'>here</a>." %}
+content = "Crimp the two signal wires. Learn how to crimp goooood <a href='/guide/how-to-crimp/'>here</a>." %}
 
 {% include step.html
 title = "Insert connector"
@@ -526,10 +526,11 @@ wire." %}
 {% include step.html
 title = "Plug in the motors"
 image = "chassis---plug-motor-connectors.jpg"
-content = "Referring to the SKR Pico pinout, port E connects to the top left (extruder) motor, port X to the bottom left (A) motor, port Y
+content = "Referring to the SKR Pico pinout, port E connects to the top left (extruder) motor, port X to the bottom
+left (A) motor, port Y
 to the bottom right motor (B), port Z1 to the top right (Z-Axis) motor."
 buttonTitle = "SKR Pico Pinout"
-buttonLink = "/bom/skr/"
+buttonLink = "/lemontron-rev-a/bom/electronics/skr/"
 buttonIcon = "cable" %}
 
 {% include step.html
