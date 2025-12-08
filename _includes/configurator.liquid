@@ -1,59 +1,78 @@
+<div id="config-source" style="display:none">
+    <textarea data-filename="printer.cfg">{% include configurator/printer.cfg %}</textarea>
+    <textarea data-filename="positron_macros.cfg">{% include configurator/positron_macros.cfg %}</textarea>
+</div>
+
 <script src="https://cdn.jsdelivr.net/npm/jszip@3.10.1/dist/jszip.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/mustache@4.2.0/mustache.min.js"></script>
 <script type="text/javascript">
-	const extruderDefs = {
-		'hummingbird': {
-			'extruder': 'Hummingbird',
-			'dir_pin': 'gpio13',
-			'rotation_distance': '53.494165',
-			'gear_ratio': '44:10, 37:17',
+	const aliases = {
+		'extruder/hummingbird': {
+			'extruder_name': 'Hummingbird',
+			'extruder_dir_pin': 'gpio13',
+			'extruder_rotation_distance': '53.494165',
+			'extruder_gear_ratio': '44:10, 37:17',
 		},
-		'lemonstruder1': {
-			'extruder': 'Lemonstruder 1',
-			'dir_pin': '!gpio13',
-			'rotation_distance': '22.5',
-			'gear_ratio': '1:1',
+		'extruder/lemonstruder-v1': {
+			'extruder_name': 'Lemonstruder 1',
+			'extruder_dir_pin': '!gpio13',
+			'extruder_rotation_distance': '22.5',
+			'extruder_gear_ratio': '1:1',
 		},
-		'lemonstruder16': {
-			'extruder': 'Endgame Lemonstruder 16T',
-			'dir_pin': '!gpio13',
-			'rotation_distance': '42.612471',
-			'gear_ratio': '72:16',
+		'extruder/lemonstruder-v2': {
+			'extruder_name': 'Endgame Lemonstruder 16T',
+			'extruder_dir_pin': '!gpio13',
+			'extruder_rotation_distance': '42.612471',
+			'extruder_gear_ratio': '72:16',
 		},
-		'lemonstruder17': {
-			'extruder': 'Endgame Lemonstruder 17T',
-			'dir_pin': '!gpio13',
-			'rotation_distance': '42.612471',
-			'gear_ratio': '72:17',
+		'extruder/lemonstruder-v2-17t': {
+			'extruder_name': 'Endgame Lemonstruder 17T',
+			'extruder_dir_pin': '!gpio13',
+			'extruder_rotation_distance': '42.612471',
+			'extruder_gear_ratio': '72:17',
+		},
+		'tool/v1': {
+			'tool_name': 'Single Duct',
+			'probe_x_offset': 24,
+			'probe_y_offset': -24,
+		},
+		'tool/v2': {
+			'tool_name': 'Wraparound Duct',
+			'probe_x_offset': 15,
+			'probe_y_offset': -24,
+		},
+		'tool/v3': {
+			'tool_name': 'Wraparound Duct V2',
+			'probe_x_offset': 8,
+			'probe_y_offset': -19,
 		},
 	};
 
 	const getContext = (form) => {
 		const data = new FormData(form);
-		const res = data.keys().toArray().reduce((acc, key) => {
-			acc[key] = data.get(key);
+		const [max_x, max_y, max_z] = data.get('volume').split('x'); // Parse volume
+		return data.keys().toArray().reduce((acc, key) => {
+			const val = data.get(key);
+			if (aliases[val]) { // Check for aliases
+				Object.assign(acc, aliases[val]);
+			} else { // Fallback to form value
+				acc[key] = val;
+			}
 			return acc;
-		}, {});
-		const [max_x, max_y, max_z] = res.volume.split('x');
-		return {...res, ...extruderDefs[res.extruder], max_x, max_y, max_z};
+		}, {max_x, max_y, max_z});
 	};
 
-	const generateConfig = (form) => {
+	const generateZip = (form) => {
 		if (!form.checkValidity()) return form.reportValidity();
-
-		console.log('Generate configuration...');
 		const context = getContext(form);
-		console.log(context);
+		console.log('Context:', context);
 
 		const zip = new JSZip();
-		const container = document.getElementById('config-source');
-		container.querySelectorAll('textarea').forEach(textarea => {
-			const filename = textarea.getAttribute('data-filename');
-			const template = textarea.value || textarea.textContent;
-			const rendered = Mustache.render(template, context);
-
-			console.log(filename, rendered);
-			zip.file(filename, rendered);
+		document.querySelectorAll('#config-source textarea').forEach(textarea => {
+			const fileName = textarea.getAttribute('data-filename');
+			const content = Mustache.render(textarea.value, context);
+			console.log(fileName, content);
+			zip.file(fileName, content);
 		});
 		downloadZip(zip);
 	};
@@ -74,15 +93,10 @@
 		const form = document.getElementById('configurator');
 		form.addEventListener('submit', (e) => {
 			e.preventDefault();
-			generateConfig(form);
+			generateZip(form);
 		});
 	});
 </script>
-
-<div id="config-source" style="display:none">
-    <textarea data-filename="printer.cfg">{% include configurator/printer.cfg %}</textarea>
-    <textarea data-filename="positron_macros.cfg">{% include configurator/positron_macros.cfg %}</textarea>
-</div>
 
 <form id="configurator" class="frame">
     <div class="configurator-title">Configuration Generator (BETA)</div>
@@ -91,17 +105,20 @@
         <label>
             <span>Type</span>
             <select name="extruder" required>
-                <option value="lemonstruder16" title="Endgame design with 16T gear" selected>Endgame Lemonstruder
+                <option value="extruder/lemonstruder-v2" title="Endgame design with 16T gear" selected>Endgame
+                    Lemonstruder
                 </option>
-                <option value="lemonstruder17" title="Endgame design with 17T gear mod">Endgame Lemonstruder 17T
+                <option value="extruder/lemonstruder-v2-17t" title="Endgame design with 17T gear mod">Endgame
+                    Lemonstruder 17T
                 </option>
-                <option value="lemonstruder1" title="Original design from Rev A-D">Lemonstruder</option>
-                <option value="hummingbird" title="Externally mounted extruder used for testing purposes">Hummingbird
+                <option value="extruder/lemonstruder-v1" title="Original design from Rev A-D">Lemonstruder</option>
+                <option value="extruder/hummingbird" title="Externally mounted extruder used for testing purposes">
+                    Hummingbird
                 </option>
             </select>
         </label>
         <label>
-            <span>Power</span>
+            <span>Current</span>
             <select name="extruder_current" required>
                 <option value="0.6" selected title="Sets extruder motor current to 0.6">Balanced</option>
                 <option value="0.8" title="Sets extruder motor current to 0.8">Performance</option>
@@ -114,8 +131,15 @@
         <label>
             <span>Part Cooling</span>
             <select name="pcf_max_power" required>
-                <option value="1.0" title="Sets max fan power to 100%" selected>Full Power</option>
-                <option value="0.8" title="Sets max fan power to 80%">Quieter</option>
+                <option value="1.0" title="Sets max fan power to 100%" selected>Full</option>
+                <option value="0.8" title="Sets max fan power to 80%">Quiet</option>
+            </select>
+        </label>
+        <label>
+            <span>Chassis</span>
+            <select name="chassis_fan_speed" required>
+                <option value="1.0" title="Sets max fan power to 100%" selected>Full</option>
+                <option value="0.8" title="Sets max fan power to 80%">Quiet</option>
             </select>
         </label>
     </fieldset>
@@ -139,17 +163,28 @@
         </label>
         <label>
             <span>Homing Sensitivity</span>
-            <select name="driver_SGTHRS" required>
+            <select name="motion_homing_sensitivity" required>
                 <option value="60" title="Optimized value for properly built Lemontron" selected>Standard</option>
                 <option value="70" title="Testing value, for problematic drivetrains">Extra Stiff</option>
             </select>
         </label>
         <label>
-            <span>Power</span>
-            <select name="xy_current" required>
+            <span>Current</span>
+            <select name="motion_current" required>
                 <option value="0.6" title="Sets motor run current to 0.6" selected>Balanced</option>
                 <option value="0.8" title="Sets motor run current to 0.8">Performance</option>
                 <option value="1.0" title="Sets motor run current to 1.0">Turbo</option>
+            </select>
+        </label>
+    </fieldset>
+    <fieldset>
+        <legend>Tool End</legend>
+        <label>
+            <span>Type</span>
+            <select name="tool" required>
+                <option value="tool/v1" title="Original Rev A">Original</option>
+                <option value="tool/v2" title="Announced with Rev E video" selected>Wraparound</option>
+                <option value="tool/v3" title="Separate duct, case, and shroud components">Wraparound V2</option>
             </select>
         </label>
     </fieldset>
