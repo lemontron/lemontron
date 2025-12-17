@@ -9,6 +9,12 @@ order: 1
 
 {%- include tips/printing-tips.html -%}
 
+## Printing difficulty: Level 10
+
+This bad boy requires a recent enclosed printer or tuning that's considered perfection-seeking! These
+tolerances are tight and print quality _must_ be off-the-charts high. As for the actual assembly, the difficulty is much
+more forgiving-- the tools are common and the build process is extremely rewarding.
+
 ## Chassis Inventory & Materials
 
 <ul class="inventory">

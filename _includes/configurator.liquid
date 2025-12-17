@@ -99,7 +99,7 @@
 </script>
 
 <form id="configurator" class="frame">
-    <div class="configurator-title">Configuration Generator (BETA)</div>
+    <div class="configurator-title">Configuration Generator</div>
     <fieldset>
         <legend>Extruder</legend>
         <label>
@@ -158,7 +158,7 @@
             <select name="volume" required>
                 <option value="180x180x165" title="Build volume of Rev A-D">180x180x165</option>
                 <option value="180x177x161" title="Build volume of the Rev E release" selected>180x177x161</option>
-                <option value="180x180x161" title="Build volume of future Rev F release" disabled>180x180x161</option>
+                <option value="180x180x161" title="Unreleased, don't use this">180x180x161</option>
             </select>
         </label>
         <label>
@@ -188,6 +188,6 @@
             </select>
         </label>
     </fieldset>
-    <div class="meta"><b>Defaults are optimized for Rev E.</b> This tool is brand new, send feedback in Discord!</div>
+    <div class="meta">Note: Default config is optimized for Rev E.</div>
     <button type="submit">Download Config</button>
 </form>
