@@ -8,6 +8,7 @@ links:
         url: https://www.aliexpress.com/item/3256804397445121.html
 md: Includes the nut.
 dimensions:
+  Length: 250mm
+  Diameter: 5mm
   Pitch: 1mm
   Lead: 4mm
-  Length: 250mm
