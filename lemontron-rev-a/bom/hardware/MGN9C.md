@@ -2,6 +2,7 @@
 layout: bom
 title: X-Axis Rail
 qty: 1
+modification: true
 ---
 
 The smallest rail in the BOM allows the tool head to travel left and right.
