@@ -1,14 +1,17 @@
 ---
 layout: bom
 title: Big Bearings
-qty: 10
+qty: 12
 uses:
-  - location: Midplate
+  - location: Midplates
     qty: 4
-  - location: XY Spacer
+  - location: Z Block
+    qty: 2
+    note: The back of the printer
+  - location: Carriage Block
     qty: 2
     note: Routes the **upper** belt section
-  - location: X Axis
+  - location: X Rail
     qty: 2
     note: Fastened to the bottom of the X rail
   - location: Z-Idler

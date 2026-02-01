@@ -58,7 +58,7 @@ screws:
     length_mm: 20
     uses:
       - { name: Y-Rail, qty: 10 }
-      - { name: XY Spacer, qty: 2 }
+      - { name: Carriage Block, qty: 2 }
       - { name: Mid Plates, qty: 2 }
       - { name: Top Plates, qty: 4 }
       - { name: Bed Screws, qty: 2 }
